@@ -8,24 +8,58 @@ import unicodedata
 import zipfile
 import ast
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 import xml.etree.ElementTree as ET
 
 import requests
-from fastapi import Body, FastAPI, HTTPException
+from fastapi import Body, FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pymongo import MongoClient
 from pymongo_management import get_client_name
-OPENAI_MODEL = os.getenv("FACEBOOK_RECRUITMENT_OPENAI_MODEL", "gpt-4.1-mini")
+
+def _dotenv_value(name: str) -> str:
+    env_path = Path(".env")
+    if not env_path.exists():
+        return ""
+    try:
+        for line in env_path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, value = line.split("=", 1)
+            if key.strip() == name:
+                return value.strip().strip('"').strip("'")
+    except Exception:
+        return ""
+    return ""
+
+def _env_value(name: str) -> str:
+    return os.getenv(name, "").strip() or _dotenv_value(name)
+
+def _bool_value(value: Any, default: bool = False) -> bool:
+    if value is None:
+        return default
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, (int, float)):
+        return value != 0
+    text = str(value).strip().lower()
+    if text in {"1", "true", "yes", "on"}:
+        return True
+    if text in {"0", "false", "no", "off"}:
+        return False
+    return default
+
+OPENAI_MODEL = _env_value("FACEBOOK_RECRUITMENT_OPENAI_MODEL") or "gpt-4o-mini"
 OPENAI_TIMEOUT = float(os.getenv("FACEBOOK_RECRUITMENT_OPENAI_TIMEOUT", "60"))
 API_PORT = int(os.getenv("FACEBOOK_RECRUITMENT_MESSAGE_API_PORT", "8025"))
 MONGO_DB_NAME = os.getenv("FACEBOOK_RECRUITMENT_MONGO_DB", "FB_database")
 MONGO_SOURCE_COLLECTION = os.getenv("FACEBOOK_RECRUITMENT_SOURCE_COLLECTION", "data_successful")
 MONGO_TARGET_COLLECTION = os.getenv("FACEBOOK_RECRUITMENT_TARGET_COLLECTION", "data_ntd_spam")
 INDUSTRY_XLSX_PATH = Path(os.getenv("FACEBOOK_RECRUITMENT_INDUSTRY_XLSX", "Điểm thao ngành nghề.xlsx"))
-DEFAULT_USE_OPENAI = os.getenv("FACEBOOK_RECRUITMENT_USE_OPENAI", "false").strip().lower() in {"1", "true", "yes", "on"}
+DEFAULT_USE_OPENAI = _bool_value(_env_value("FACEBOOK_RECRUITMENT_USE_OPENAI"), default=True)
 FALLBACK_POSITION = "vị trí trong bài tuyển dụng"
 MALE_NAME_HINTS = {
     "anh", "ông", "mr", "a",
@@ -505,24 +539,6 @@ def is_recruitment_post(text: str, item: Optional[Dict[str, Any]] = None) -> boo
 
     return True
 
-def _dotenv_value(name: str) -> str:
-    env_file = Path(".env")
-    if not env_file.exists():
-        return ""
-    try:
-        for line in env_file.read_text(encoding="utf-8").splitlines():
-            if not line.strip() or line.lstrip().startswith("#") or "=" not in line:
-                continue
-            key, value = line.split("=", 1)
-            if key.strip() == name:
-                return value.strip().strip("'\"")
-    except Exception as exc:
-        print(f"[FACEBOOK_PHASE] Khong doc duoc .env: {exc}")
-    return ""
-
-def _env_value(name: str) -> str:
-    return os.getenv(name, "").strip() or _dotenv_value(name)
-
 def _openai_api_key() -> str:
     api_key = _env_value("OPENAI_API_KEY")
     if api_key:
@@ -635,12 +651,58 @@ def extract_recruitment_info_with_openai(text: str, user_name: str = "") -> Dict
         "ai_error": "",
     }
 
+def _is_generic_position_intro(norm: str) -> bool:
+    return bool(re.search(
+        r"\b(?:cac\s+vi\s+tri\s+sau|nhan\s+luc\s+cac\s+vi\s+tri|bo\s+sung\s+nhan\s+luc|nhu\s+cau\s+san\s+xuat|can\s+tuyen\s+dung\s+bo\s+sung)\b",
+        norm,
+    ))
+
+def _clean_position_candidate(line: str) -> str:
+    cleaned = re.sub(r"^\s*(?:\d+[\.\)]|[-+*•])\s*", "", normalize_spaces(line)).strip(" :-–—")
+    cleaned = re.sub(r"\s*\([^)]*(?:kinh nghiệm|tiếng|yêu cầu|kinh nghiem|tieng|yeu cau)[^)]*\)\s*$", "", cleaned, flags=re.I)
+    return normalize_spaces(cleaned)
+
+def _is_position_candidate(norm: str) -> bool:
+    if not norm or _is_generic_position_intro(norm):
+        return False
+    if re.search(r"\b(?:cach\s+thuc|ung\s+tuyen|gui\s+cv|email|zalo|hotline|lien\s+he|dia\s+chi|luong|thu\s+nhap|quyen\s+loi|yeu\s+cau)\b", norm):
+        return False
+    return bool(re.search(
+        r"\b(?:truong\s+phong|nhan\s+vien|quan\s+ly|giam\s+sat|ke\s+toan|bao\s+ve|lai\s+xe|cong\s+nhan|tho|tu\s+van|kinh\s+doanh|sales|sale|nv)\b",
+        norm,
+    ))
+
+def _extract_position_list_after_intro(norm_lines: List[Tuple[str, str]]) -> str:
+    for index, (_, norm) in enumerate(norm_lines):
+        if not _is_generic_position_intro(norm):
+            continue
+
+        positions = []
+        for line, next_norm in norm_lines[index + 1:index + 8]:
+            if re.search(r"\b(?:cach\s+thuc|ung\s+tuyen|gui\s+cv|email|zalo|hotline|lien\s+he|dia\s+chi)\b", next_norm):
+                break
+            is_list_item = bool(re.search(r"^\s*(?:\d+[\.\)]|[-+*•])\s*", line))
+            if not is_list_item and not _is_position_candidate(next_norm):
+                continue
+            cleaned = _clean_position_candidate(line)
+            cleaned_norm = strip_accents(cleaned).lower()
+            if cleaned and _is_position_candidate(cleaned_norm) and cleaned not in positions:
+                positions.append(cleaned)
+            if len(positions) >= 4:
+                break
+
+        if positions:
+            return ", ".join(positions)
+    return ""
+
 def extract_recruitment_info_rule_based(text: str, user_name: str = "") -> Dict[str, Any]:
     lines = clean_post_lines(text, limit=30)
     norm_lines = [(line, strip_accents(line).lower()) for line in lines]
 
-    position = ""
+    position = _extract_position_list_after_intro(norm_lines)
     for line, norm in norm_lines:
+        if position:
+            break
         if re.search(r"\b(?:vi tri|can tuyen|tuyen gap|tuyen dung|dang tuyen|tuyen)\b", norm):
             cleaned = re.sub(
                 r"^\s*(?:[-+*•]\s*)?(?:vi\s*tri|can\s*tuyen|tuyen\s*gap|tuyen\s*dung|dang\s*tuyen|tuyen)\s*[:\-–—]*\s*",
@@ -648,7 +710,7 @@ def extract_recruitment_info_rule_based(text: str, user_name: str = "") -> Dict[
                 line,
                 flags=re.I,
             ).strip(" :-–—")
-            if cleaned and len(cleaned) <= 90:
+            if cleaned and len(cleaned) <= 90 and not _is_generic_position_intro(strip_accents(cleaned).lower()):
                 position = cleaned
                 break
 
@@ -786,10 +848,10 @@ def build_recruitment_message(job: RecruitmentJob, info: Optional[Dict[str, Any]
     return normalize_spaces(random.choice(variants))
 OUTPUT_FIELDS = [
     "index", "_id", "predicted_label", "score", "post_time", "user_name",
-    "position", "salary", "location", "honorific", "name", "has_specific_position",
-    "company", "work_time", "requirements", "contact", "confidence", "info_source",
-    "ai_used", "ai_error", "flags", "message", "text_excerpt",
-    "link_user_post", "link_post", "list_phone",
+    "position", "salary", "location", "honorific", "name",
+    "company", "work_time", "requirements", "confidence", "ai_used",
+    "ai_error", "message", "text_excerpt",
+    "link_user_post", "link_post", "list_phone", "list_email",
 ]
 
 app = FastAPI(title="Facebook Recruitment Message API", version="1.0.0")
@@ -845,13 +907,13 @@ def detect_flags(record: Dict[str, Any], parsed: Dict[str, Any]) -> str:
         flags.append("position_fallback")
     if len(position.split()) > 9:
         flags.append("position_long")
-    if re.search(r"\b(tÆ°Æ¡ng Ä‘Æ°Æ¡ng|Ä‘á»c thÃ´ng tin|liÃªn há»‡|á»©ng tuyá»ƒn|ngÃ´i nhÃ |Ä‘i lÃ m ngay)\b", position, flags=re.I):
+    if re.search(r"\b(tương đương|đọc thông tin|liên hệ|ứng tuyển|ngôi nhà|đi làm ngay)\b", position, flags=re.I):
         flags.append("position_suspicious")
-    if re.search(r"\b(lÆ°Æ¡ng|thu nháº­p|má»©c lÆ°Æ¡ng)\b", text, flags=re.I) and not salary:
+    if re.search(r"\b(lương|thu nhập|mức lương)\b", text, flags=re.I) and not salary:
         flags.append("missing_salary")
     if salary and len(salary) > 85:
         flags.append("salary_long")
-    if re.search(r"\b(Ä‘á»‹a Ä‘iá»ƒm|lÃ m viá»‡c táº¡i|Ä‘á»‹a chá»‰|\[[^\]]+\])", text, flags=re.I) and not location:
+    if re.search(r"\b(địa điểm|làm việc tại|địa chỉ|\[[^\]]+\])", text, flags=re.I) and not location:
         flags.append("missing_location")
     if location and len(location) > 90:
         flags.append("location_long")
@@ -910,6 +972,11 @@ def evaluate_record(index: int, record: Dict[str, Any], use_openai: bool = False
         "text_excerpt": job.text,
         "link_user_post": job.link_user_post,
         "link_post": job.link_post,
+        "list_phone": normalize_phone_list(record.get("list_phone")),
+        "list_email": normalize_email_list(
+            record.get("list_email") or record.get("list_mail") or record.get("email") or record.get("mail"),
+            record.get("text"),
+        ),
     }
 
 def summarize(rows: List[Dict[str, Any]]) -> Dict[str, Any]:
@@ -937,7 +1004,9 @@ def _record_from_body(body: Dict[str, Any]) -> Dict[str, Any]:
         ("link_post", "link_post"), ("post_url", "link_post"),
         ("link_user_post", "link_user_post"), ("profile_url", "link_user_post"),
         ("predicted_label", "predicted_label"), ("score", "score"),
-        ("post_time", "post_time"), ("_id", "_id"),
+        ("post_time", "post_time"), ("ngay_dang", "ngay_dang"),
+        ("list_phone", "list_phone"), ("list_email", "list_email"), ("list_mail", "list_mail"),
+        ("email", "email"), ("mail", "mail"), ("_id", "_id"),
     ):
         value = body.get(source_key)
         if value not in (None, ""):
@@ -980,7 +1049,7 @@ def _column_index(cell_ref: str) -> int:
         index = index * 26 + ord(char) - ord("A") + 1
     return max(index - 1, 0)
 
-def load_industry_names(path: Path = INDUSTRY_XLSX_PATH) -> List[str]:
+def load_industries_by_type(path: Path = INDUSTRY_XLSX_PATH) -> Dict[str, List[str]]:
     if not path.exists():
         raise HTTPException(status_code=500, detail=f"Industry file not found: {path}")
 
@@ -996,7 +1065,7 @@ def load_industry_names(path: Path = INDUSTRY_XLSX_PATH) -> List[str]:
             ]
 
         sheet = ET.fromstring(archive.read("xl/worksheets/sheet1.xml"))
-        industries: List[str] = []
+        industries_by_type: Dict[str, List[str]] = {}
         for row in sheet.findall(".//a:row", ns):
             values: Dict[int, str] = {}
             for cell in row.findall("a:c", ns):
@@ -1004,9 +1073,24 @@ def load_industry_names(path: Path = INDUSTRY_XLSX_PATH) -> List[str]:
 
             industry = normalize_spaces(values.get(1, ""))
             industry_type = normalize_spaces(values.get(2, ""))
-            if industry and industry_type in {"1", "2"} and industry.lower() != "ngành nghề":
-                industries.append(industry)
-        return industries
+            if industry and industry_type and strip_accents(industry).lower() != "nganh nghe":
+                industries_by_type.setdefault(industry_type, []).append(industry)
+        return industries_by_type
+
+def load_industry_names(path: Path = INDUSTRY_XLSX_PATH) -> List[str]:
+    industries_by_type = load_industries_by_type(path)
+    industries: List[str] = []
+    for industry_type in ("1", "2"):
+        industries.extend(industries_by_type.get(industry_type, []))
+    return industries
+
+def load_excluded_industry_names(path: Path = INDUSTRY_XLSX_PATH) -> List[str]:
+    industries_by_type = load_industries_by_type(path)
+    excluded: List[str] = []
+    for industry_type, industries in industries_by_type.items():
+        if industry_type not in {"1", "2"}:
+            excluded.extend(industries)
+    return excluded
 
 def _industry_keywords(industry_names: List[str]) -> List[Tuple[str, str]]:
     keywords: Dict[str, str] = {}
@@ -1077,6 +1161,36 @@ def normalize_phone_list(value: Any) -> List[str]:
             phones.append(phone)
     return phones
 
+def normalize_email_list(value: Any, fallback_text: Any = "") -> List[str]:
+    raw_items: List[Any]
+    if isinstance(value, list):
+        raw_items = value
+    elif isinstance(value, tuple):
+        raw_items = list(value)
+    elif isinstance(value, str):
+        try:
+            parsed = ast.literal_eval(value)
+            raw_items = parsed if isinstance(parsed, list) else [value]
+        except Exception:
+            raw_items = [value]
+    else:
+        raw_items = []
+
+    emails = []
+    for item in raw_items:
+        for email in re.findall(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}", safe_str(item)):
+            email = email.strip(".,;:()[]{}<>").lower()
+            if email and email not in emails:
+                emails.append(email)
+
+    if not emails:
+        for email in re.findall(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}", safe_str(fallback_text)):
+            email = email.strip(".,;:()[]{}<>").lower()
+            if email and email not in emails:
+                emails.append(email)
+
+    return emails
+
 def phone_dedupe_key(phones: List[str]) -> Tuple[str, ...]:
     return tuple(sorted(set(phones)))
 
@@ -1091,8 +1205,59 @@ def _parse_datetime_score(value: Any) -> float:
             continue
     return 0.0
 
+def _parse_date_value(value: Any) -> Optional[date]:
+    if isinstance(value, datetime):
+        return value.date()
+    if isinstance(value, date):
+        return value
+
+    text = safe_str(value)
+    if not text:
+        return None
+
+    normalized = text.replace("T", " ").replace("Z", "")
+    normalized = re.sub(r"([+-]\d{2}:\d{2})$", "", normalized).strip()
+    for fmt in (
+        "%Y-%m-%d %H:%M:%S",
+        "%Y-%m-%d %H:%M",
+        "%Y-%m-%d",
+        "%d/%m/%Y %H:%M:%S",
+        "%d/%m/%Y %H:%M",
+        "%d/%m/%Y",
+        "%d-%m-%Y %H:%M:%S",
+        "%d-%m-%Y %H:%M",
+        "%d-%m-%Y",
+    ):
+        try:
+            return datetime.strptime(normalized[:len(fmt)], fmt).date()
+        except Exception:
+            continue
+
+    match = re.search(r"\b(\d{4})-(\d{1,2})-(\d{1,2})\b", normalized)
+    if match:
+        try:
+            return date(int(match.group(1)), int(match.group(2)), int(match.group(3)))
+        except Exception:
+            return None
+
+    match = re.search(r"\b(\d{1,2})[/-](\d{1,2})[/-](\d{4})\b", normalized)
+    if match:
+        try:
+            return date(int(match.group(3)), int(match.group(2)), int(match.group(1)))
+        except Exception:
+            return None
+
+    return None
+
+def _matches_today_by_post_date(record: Dict[str, Any], today: date) -> bool:
+    for key in ("post_time", "ngay_dang"):
+        parsed = _parse_date_value(record.get(key))
+        if parsed == today:
+            return True
+    return False
+
 def record_newness_score(record: Dict[str, Any]) -> float:
-    for key in ("post_time", "created_at", "time"):
+    for key in ("post_time", "ngay_dang", "created_at", "time"):
         score = _parse_datetime_score(record.get(key))
         if score:
             return score
@@ -1108,55 +1273,143 @@ def _mongo_database():
     client = MongoClient(get_client_name(), serverSelectionTimeoutMS=10000)
     return client[MONGO_DB_NAME]
 
-def _record_for_mongo(record: Dict[str, Any]) -> Dict[str, Any]:
+def _upsert_saved_message(target, filter_query: Dict[str, Any], row: Dict[str, Any]) -> None:
+    target.update_one(filter_query, {"$set": row}, upsert=True)
+
+def _update_saved_message(target, filter_query: Dict[str, Any], row: Dict[str, Any]) -> None:
+    target.update_one(filter_query, {"$set": row}, upsert=False)
+
+def _max_saved_index(target) -> int:
+    doc = target.find_one(
+        {"index": {"$type": "number"}},
+        {"index": 1},
+        sort=[("index", -1)],
+    )
+    try:
+        return int(doc.get("index") or 0) if doc else 0
+    except Exception:
+        return 0
+
+def _assign_saved_index(target, row: Dict[str, Any], next_index: int) -> int:
+    existing = target.find_one({"source_id": row.get("source_id")}, {"index": 1})
+    if existing and existing.get("index") not in (None, ""):
+        row["index"] = existing.get("index")
+        return next_index
+    row["index"] = next_index
+    return next_index + 1
+
+def _skip_entry(
+    record: Dict[str, Any],
+    reason_code: str,
+    reason: str,
+    matched_industries: Optional[List[str]] = None,
+) -> Dict[str, Any]:
+    clean_record = _record_for_mongo(record)
     return {
-        "_id": clean_oid(record.get("_id")),
-        "text": safe_str(record.get("text") or record.get("content") or record.get("post_text")),
-        "link_user_post": safe_str(record.get("link_user_post") or record.get("profile_url")),
-        "link_post": safe_str(record.get("link_post") or record.get("post_url")),
-        "user_name": safe_str(record.get("user_name") or record.get("author")),
-        "predicted_label": safe_str(record.get("predicted_label")),
-        "score": record.get("score", ""),
-        "post_time": safe_str(record.get("post_time") or record.get("created_at") or record.get("time")),
-        "list_phone": normalize_phone_list(record.get("list_phone")),
+        "source_id": clean_record.get("_id"),
+        "reason_code": reason_code,
+        "reason": reason,
+        "predicted_label": clean_record.get("predicted_label", ""),
+        "post_time": clean_record.get("post_time", ""),
+        "ngay_dang": clean_record.get("ngay_dang", ""),
+        "user_name": clean_record.get("user_name", ""),
+        "link_post": clean_record.get("link_post", ""),
+        "link_user_post": clean_record.get("link_user_post", ""),
+        "list_phone": clean_record.get("list_phone", []),
+        "matched_industries": matched_industries or [],
+        "text_excerpt": excerpt(clean_record.get("text", "")),
     }
 
-def fetch_filter_save_from_mongo(
-    limit: int = 10,
+def _skip_summary(skipped: List[Dict[str, Any]]) -> Dict[str, int]:
+    counts: Dict[str, int] = {}
+    for item in skipped:
+        reason_code = safe_str(item.get("reason_code"))
+        if reason_code:
+            counts[reason_code] = counts.get(reason_code, 0) + 1
+    return dict(sorted(counts.items(), key=lambda item: (-item[1], item[0])))
+
+def fetch_save_messages_today_from_mongo(
+    limit: int = 100,
     scan_limit: int = 5000,
     batch_size: int = 200,
+    skipped_limit: int = 200,
     verbose: bool = False,
     use_openai: bool = DEFAULT_USE_OPENAI,
 ) -> Dict[str, Any]:
     industry_names = load_industry_names()
+    excluded_industry_names = load_excluded_industry_names()
     db = _mongo_database()
     source = db[MONGO_SOURCE_COLLECTION]
     target = db[MONGO_TARGET_COLLECTION]
-    query = {"predicted_label": "Tin tuyển dụng", "text": {"$type": "string", "$ne": ""}}
+    today = datetime.now().date()
+    tomorrow = today + timedelta(days=1)
+    query = {
+        "predicted_label": "Tin tuyển dụng",
+        "text": {"$type": "string", "$ne": ""},
+        "$or": [
+            {"post_time": {"$gte": datetime.combine(today, datetime.min.time()), "$lt": datetime.combine(tomorrow, datetime.min.time())}},
+            {"ngay_dang": {"$gte": datetime.combine(today, datetime.min.time()), "$lt": datetime.combine(tomorrow, datetime.min.time())}},
+            {"post_time": {"$exists": True, "$ne": ""}},
+            {"ngay_dang": {"$exists": True, "$ne": ""}},
+        ]
+    }
     projection = {
         "text": 1, "content": 1, "post_text": 1, "link_user_post": 1, "profile_url": 1,
         "link_post": 1, "post_url": 1, "user_name": 1, "author": 1, "predicted_label": 1,
-        "score": 1, "post_time": 1, "created_at": 1, "time": 1, "list_phone": 1,
+        "score": 1, "post_time": 1, "ngay_dang": 1, "created_at": 1, "time": 1,
+        "list_phone": 1, "list_email": 1, "list_mail": 1, "email": 1, "mail": 1,
     }
 
     candidates: List[Dict[str, Any]] = []
     candidates_by_phone: Dict[Tuple[str, ...], Dict[str, Any]] = {}
+    skipped: List[Dict[str, Any]] = []
+    skipped_total = 0
+    skip_counts: Dict[str, int] = {}
     scanned = 0
+
+    def add_skip(
+        record: Dict[str, Any],
+        reason_code: str,
+        reason: str,
+        matched_industries: Optional[List[str]] = None,
+    ) -> None:
+        nonlocal skipped_total
+        skipped_total += 1
+        skip_counts[reason_code] = skip_counts.get(reason_code, 0) + 1
+        if len(skipped) < skipped_limit:
+            skipped.append(_skip_entry(record, reason_code, reason, matched_industries))
+
     cursor = source.find(query, projection, no_cursor_timeout=True).sort("_id", -1).batch_size(batch_size)
     try:
         for record in cursor:
             scanned += 1
             if scanned > scan_limit:
                 break
+            if not _matches_today_by_post_date(record, today):
+                add_skip(record, "not_today", "Bai viet khong thuoc ngay hom nay")
+                continue
 
             clean_record = _record_for_mongo(record)
             if not is_recruitment_post(clean_record.get("text", ""), clean_record):
+                add_skip(record, "not_recruitment_post", "Bai viet khong duoc nhan dien la tin tuyen dung")
+                continue
+
+            excluded_industries = match_industries(clean_record.get("text", ""), excluded_industry_names)
+            if excluded_industries:
+                add_skip(
+                    record,
+                    "excluded_industry_score",
+                    "Bai viet bi loai vi nganh nghe trong file Excel khong thuoc diem 1 hoac 2",
+                    excluded_industries,
+                )
                 continue
 
             matched_industries = match_industries(clean_record.get("text", ""), industry_names)
             if not matched_industries:
+                add_skip(record, "no_matched_industry", "Bai viet khong khop nganh nghe trong danh sach")
                 continue
             if is_lao_dong_pho_thong_post(clean_record.get("text", ""), matched_industries):
+                add_skip(record, "lao_dong_pho_thong", "Bai viet bi loai vi thuoc nhom Lao dong pho thong", matched_industries)
                 continue
 
             candidate = {
@@ -1168,7 +1421,21 @@ def fetch_filter_save_from_mongo(
             if key:
                 existing = candidates_by_phone.get(key)
                 if existing is None or candidate["newness_score"] > existing["newness_score"]:
+                    if existing is not None:
+                        add_skip(
+                            existing["record"],
+                            "duplicate_phone_older",
+                            "Bai viet bi loai do trung so dien thoai voi bai moi hon",
+                            existing.get("matched_industries", []),
+                        )
                     candidates_by_phone[key] = candidate
+                else:
+                    add_skip(
+                        clean_record,
+                        "duplicate_phone_older",
+                        "Bai viet bi loai do trung so dien thoai voi bai moi hon",
+                        matched_industries,
+                    )
             else:
                 candidates.append(candidate)
     finally:
@@ -1176,29 +1443,208 @@ def fetch_filter_save_from_mongo(
 
     candidates.extend(candidates_by_phone.values())
     candidates.sort(key=lambda item: item["newness_score"], reverse=True)
+    selected_candidates = candidates[:limit]
+    for candidate in candidates[limit:]:
+        add_skip(
+            candidate["record"],
+            "limit_reached",
+            "Bai viet hop le nhung khong luu vi vuot qua limit",
+            candidate.get("matched_industries", []),
+        )
+
+    rows: List[Dict[str, Any]] = []
+    next_index = _max_saved_index(target) + 1
+    for candidate in selected_candidates:
+        clean_record = candidate["record"]
+        row = _evaluate_one(clean_record, len(rows) + 1, verbose=verbose, use_openai=use_openai)
+        row["ngay_dang"] = clean_record.get("ngay_dang", "")
+        row["matched_industries"] = candidate["matched_industries"]
+        row["source_collection"] = MONGO_SOURCE_COLLECTION
+        row["source_id"] = clean_record.get("_id")
+        row["list_phone"] = clean_record.get("list_phone", [])
+        row["list_email"] = clean_record.get("list_email", [])
+        row["dedupe_phone_key"] = list(phone_dedupe_key(clean_record.get("list_phone", [])))
+        row["saved_at"] = datetime.now().isoformat(timespec="seconds")
+        next_index = _assign_saved_index(target, row, next_index)
+        _upsert_saved_message(target, {"source_id": row["source_id"]}, row)
+        rows.append(row)
+
+    return {
+        "total": len(rows),
+        "scanned": scanned,
+        "deduped_candidates": len(candidates),
+        "skipped_total": skipped_total,
+        "skipped_returned": len(skipped),
+        "skip_summary": dict(sorted(skip_counts.items(), key=lambda item: (-item[1], item[0]))),
+        "source_collection": MONGO_SOURCE_COLLECTION,
+        "target_collection": MONGO_TARGET_COLLECTION,
+        "industry_count": len(industry_names),
+        "date": today.isoformat(),
+        "date_fields": ["post_time", "ngay_dang"],
+        "openai": use_openai,
+        "summary": summarize(rows),
+        "results": rows,
+        "messages": rows,
+        "skipped": skipped,
+    }
+
+def _record_for_mongo(record: Dict[str, Any]) -> Dict[str, Any]:
+    return {
+        "_id": clean_oid(record.get("_id")),
+        "text": safe_str(record.get("text") or record.get("content") or record.get("post_text")),
+        "link_user_post": safe_str(record.get("link_user_post") or record.get("profile_url")),
+        "link_post": safe_str(record.get("link_post") or record.get("post_url")),
+        "user_name": safe_str(record.get("user_name") or record.get("author")),
+        "predicted_label": safe_str(record.get("predicted_label")),
+        "score": record.get("score", ""),
+        "post_time": safe_str(record.get("post_time") or record.get("created_at") or record.get("time")),
+        "ngay_dang": safe_str(record.get("ngay_dang")),
+        "list_phone": normalize_phone_list(record.get("list_phone")),
+        "list_email": normalize_email_list(
+            record.get("list_email") or record.get("list_mail") or record.get("email") or record.get("mail"),
+            record.get("text") or record.get("content") or record.get("post_text"),
+        ),
+    }
+
+def fetch_filter_save_from_mongo(
+    limit: int = 10,
+    scan_limit: int = 5000,
+    batch_size: int = 200,
+    skipped_limit: int = 200,
+    verbose: bool = False,
+    use_openai: bool = DEFAULT_USE_OPENAI,
+) -> Dict[str, Any]:
+    industry_names = load_industry_names()
+    excluded_industry_names = load_excluded_industry_names()
+    db = _mongo_database()
+    source = db[MONGO_SOURCE_COLLECTION]
+    target = db[MONGO_TARGET_COLLECTION]
+    query = {"predicted_label": "Tin tuyển dụng", "text": {"$type": "string", "$ne": ""}}
+    projection = {
+        "text": 1, "content": 1, "post_text": 1, "link_user_post": 1, "profile_url": 1,
+        "link_post": 1, "post_url": 1, "user_name": 1, "author": 1, "predicted_label": 1,
+        "score": 1, "post_time": 1, "ngay_dang": 1, "created_at": 1, "time": 1,
+        "list_phone": 1, "list_email": 1, "list_mail": 1, "email": 1, "mail": 1,
+    }
+
+    candidates: List[Dict[str, Any]] = []
+    candidates_by_phone: Dict[Tuple[str, ...], Dict[str, Any]] = {}
+    skipped: List[Dict[str, Any]] = []
+    skipped_total = 0
+    skip_counts: Dict[str, int] = {}
+    scanned = 0
+
+    def add_skip(
+        record: Dict[str, Any],
+        reason_code: str,
+        reason: str,
+        matched_industries: Optional[List[str]] = None,
+    ) -> None:
+        nonlocal skipped_total
+        skipped_total += 1
+        skip_counts[reason_code] = skip_counts.get(reason_code, 0) + 1
+        if len(skipped) < skipped_limit:
+            skipped.append(_skip_entry(record, reason_code, reason, matched_industries))
+
+    cursor = source.find(query, projection, no_cursor_timeout=True).sort("_id", -1).batch_size(batch_size)
+    try:
+        for record in cursor:
+            scanned += 1
+            if scanned > scan_limit:
+                break
+
+            clean_record = _record_for_mongo(record)
+            if not is_recruitment_post(clean_record.get("text", ""), clean_record):
+                add_skip(record, "not_recruitment_post", "Bai viet khong duoc nhan dien la tin tuyen dung")
+                continue
+
+            excluded_industries = match_industries(clean_record.get("text", ""), excluded_industry_names)
+            if excluded_industries:
+                add_skip(
+                    record,
+                    "excluded_industry_score",
+                    "Bai viet bi loai vi nganh nghe trong file Excel khong thuoc diem 1 hoac 2",
+                    excluded_industries,
+                )
+                continue
+
+            matched_industries = match_industries(clean_record.get("text", ""), industry_names)
+            if not matched_industries:
+                add_skip(record, "no_matched_industry", "Bai viet khong khop nganh nghe trong danh sach")
+                continue
+            if is_lao_dong_pho_thong_post(clean_record.get("text", ""), matched_industries):
+                add_skip(record, "lao_dong_pho_thong", "Bai viet bi loai vi thuoc nhom Lao dong pho thong", matched_industries)
+                continue
+
+            candidate = {
+                "record": clean_record,
+                "matched_industries": matched_industries,
+                "newness_score": record_newness_score(record),
+            }
+            key = phone_dedupe_key(clean_record.get("list_phone", []))
+            if key:
+                existing = candidates_by_phone.get(key)
+                if existing is None or candidate["newness_score"] > existing["newness_score"]:
+                    if existing is not None:
+                        add_skip(
+                            existing["record"],
+                            "duplicate_phone_older",
+                            "Bai viet bi loai do trung so dien thoai voi bai moi hon",
+                            existing.get("matched_industries", []),
+                        )
+                    candidates_by_phone[key] = candidate
+                else:
+                    add_skip(
+                        clean_record,
+                        "duplicate_phone_older",
+                        "Bai viet bi loai do trung so dien thoai voi bai moi hon",
+                        matched_industries,
+                    )
+            else:
+                candidates.append(candidate)
+    finally:
+        cursor.close()
+
+    candidates.extend(candidates_by_phone.values())
+    candidates.sort(key=lambda item: item["newness_score"], reverse=True)
+    selected_candidates = candidates[:limit]
+    for candidate in candidates[limit:]:
+        add_skip(
+            candidate["record"],
+            "limit_reached",
+            "Bai viet hop le nhung khong luu vi vuot qua limit",
+            candidate.get("matched_industries", []),
+        )
 
     saved_rows: List[Dict[str, Any]] = []
-    for candidate in candidates[:limit]:
+    next_index = _max_saved_index(target) + 1
+    for candidate in selected_candidates:
         clean_record = candidate["record"]
         row = _evaluate_one(clean_record, len(saved_rows) + 1, verbose=verbose, use_openai=use_openai)
         row["matched_industries"] = candidate["matched_industries"]
         row["source_collection"] = MONGO_SOURCE_COLLECTION
         row["source_id"] = clean_record.get("_id")
         row["list_phone"] = clean_record.get("list_phone", [])
+        row["list_email"] = clean_record.get("list_email", [])
         row["dedupe_phone_key"] = list(phone_dedupe_key(clean_record.get("list_phone", [])))
         row["saved_at"] = datetime.now().isoformat(timespec="seconds")
-        target.replace_one({"source_id": row["source_id"]}, row, upsert=True)
+        next_index = _assign_saved_index(target, row, next_index)
+        _upsert_saved_message(target, {"source_id": row["source_id"]}, row)
         saved_rows.append(row)
 
     return {
         "total": len(saved_rows),
         "scanned": scanned,
         "deduped_candidates": len(candidates),
+        "skipped_total": skipped_total,
+        "skipped_returned": len(skipped),
+        "skip_summary": dict(sorted(skip_counts.items(), key=lambda item: (-item[1], item[0]))),
         "source_collection": MONGO_SOURCE_COLLECTION,
         "target_collection": MONGO_TARGET_COLLECTION,
         "industry_count": len(industry_names),
         "summary": summarize(saved_rows),
         "results": saved_rows,
+        "skipped": skipped,
     }
 
 def refresh_saved_mongo_records(
@@ -1214,7 +1660,8 @@ def refresh_saved_mongo_records(
             {
                 "text_excerpt": 1, "text": 1, "link_user_post": 1, "link_post": 1, "user_name": 1,
                 "predicted_label": 1, "score": 1, "post_time": 1, "source_id": 1, "matched_industries": 1,
-                "source_collection": 1, "saved_at": 1,
+                "source_collection": 1, "saved_at": 1, "index": 1,
+                "list_phone": 1, "list_email": 1, "list_mail": 1,
             },
         ).sort("saved_at", -1).limit(limit)
     )
@@ -1230,14 +1677,19 @@ def refresh_saved_mongo_records(
             "predicted_label": safe_str(doc.get("predicted_label") or "Tin tuyển dụng"),
             "score": doc.get("score", ""),
             "post_time": safe_str(doc.get("post_time")),
+            "list_phone": doc.get("list_phone", []),
+            "list_email": doc.get("list_email") or doc.get("list_mail", []),
         }
         row = _evaluate_one(record, index, verbose=verbose, use_openai=use_openai)
+        row["index"] = doc.get("index", index)
         row["matched_industries"] = doc.get("matched_industries", [])
         row["source_collection"] = doc.get("source_collection") or MONGO_SOURCE_COLLECTION
         row["source_id"] = record["_id"]
+        row["list_phone"] = normalize_phone_list(doc.get("list_phone"))
+        row["list_email"] = normalize_email_list(doc.get("list_email") or doc.get("list_mail"), record.get("text"))
         row["saved_at"] = doc.get("saved_at") or datetime.now().isoformat(timespec="seconds")
         row["refreshed_at"] = datetime.now().isoformat(timespec="seconds")
-        target.replace_one({"_id": doc["_id"]}, row, upsert=False)
+        _update_saved_message(target, {"_id": doc["_id"]}, row)
         rows.append(row)
 
     return {
@@ -1287,22 +1739,68 @@ def generate_messages(body: Any = Body(...)) -> Dict[str, Any]:
     rows = [_evaluate_one(record, start_index + offset, verbose=verbose) for offset, record in enumerate(clean_records)]
     return {"total": len(rows), "openai": True, "summary": summarize(rows), "messages": rows, "results": rows}
 
+@app.get("/api/recruitment-message/saved-today")
+def get_saved_messages_today(
+    limit: int = Query(100, ge=1, le=500),
+    scan_limit: int = Query(5000, ge=1),
+    batch_size: int = Query(200, ge=1),
+    skipped_limit: int = Query(200, ge=0, le=5000),
+    use_openai: bool = Query(DEFAULT_USE_OPENAI),
+    verbose: bool = Query(False),
+) -> Dict[str, Any]:
+    return fetch_save_messages_today_from_mongo(
+        limit=limit,
+        scan_limit=scan_limit,
+        batch_size=batch_size,
+        skipped_limit=skipped_limit,
+        verbose=verbose,
+        use_openai=use_openai,
+    )
+
+@app.post("/api/recruitment-message/saved-today")
+def post_saved_messages_today(body: Dict[str, Any] = Body(default_factory=dict)) -> Dict[str, Any]:
+    limit = int(body.get("limit") or 10)
+    scan_limit = int(body.get("scan_limit") or 50)
+    batch_size = int(body.get("batch_size") or 200)
+    skipped_limit = int(body.get("skipped_limit") if body.get("skipped_limit") is not None else 200)
+    use_openai = _bool_value(body.get("use_openai"), default=DEFAULT_USE_OPENAI)
+    if limit <= 0 or limit > 500:
+        raise HTTPException(status_code=400, detail="limit must be between 1 and 500")
+    if scan_limit <= 0:
+        raise HTTPException(status_code=400, detail="scan_limit must be greater than 0")
+    if batch_size <= 0:
+        raise HTTPException(status_code=400, detail="batch_size must be greater than 0")
+    if skipped_limit < 0 or skipped_limit > 5000:
+        raise HTTPException(status_code=400, detail="skipped_limit must be between 0 and 5000")
+    return fetch_save_messages_today_from_mongo(
+        limit=limit,
+        scan_limit=scan_limit,
+        batch_size=batch_size,
+        skipped_limit=skipped_limit,
+        verbose=bool(body.get("verbose")),
+        use_openai=use_openai,
+    )
+
 @app.post("/api/recruitment-message/save-from-mongo")
 def save_messages_from_mongo(body: Dict[str, Any] = Body(default_factory=dict)) -> Dict[str, Any]:
     limit = int(body.get("limit") or 10)
     scan_limit = int(body.get("scan_limit") or 5000)
     batch_size = int(body.get("batch_size") or 200)
-    use_openai = bool(body.get("use_openai", DEFAULT_USE_OPENAI))
+    skipped_limit = int(body.get("skipped_limit") if body.get("skipped_limit") is not None else 200)
+    use_openai = _bool_value(body.get("use_openai"), default=DEFAULT_USE_OPENAI)
     if limit <= 0 or limit > 200:
         raise HTTPException(status_code=400, detail="limit must be between 1 and 200")
     if scan_limit <= 0:
         raise HTTPException(status_code=400, detail="scan_limit must be greater than 0")
     if batch_size <= 0:
         raise HTTPException(status_code=400, detail="batch_size must be greater than 0")
+    if skipped_limit < 0 or skipped_limit > 5000:
+        raise HTTPException(status_code=400, detail="skipped_limit must be between 0 and 5000")
     return fetch_filter_save_from_mongo(
         limit=limit,
         scan_limit=scan_limit,
         batch_size=batch_size,
+        skipped_limit=skipped_limit,
         verbose=bool(body.get("verbose")),
         use_openai=use_openai,
     )
@@ -1310,7 +1808,7 @@ def save_messages_from_mongo(body: Dict[str, Any] = Body(default_factory=dict)) 
 @app.post("/api/recruitment-message/refresh-saved")
 def refresh_saved_messages(body: Dict[str, Any] = Body(default_factory=dict)) -> Dict[str, Any]:
     limit = int(body.get("limit") or 10)
-    use_openai = bool(body.get("use_openai", DEFAULT_USE_OPENAI))
+    use_openai = _bool_value(body.get("use_openai"), default=DEFAULT_USE_OPENAI)
     if limit <= 0 or limit > 200:
         raise HTTPException(status_code=400, detail="limit must be between 1 and 200")
     return refresh_saved_mongo_records(
