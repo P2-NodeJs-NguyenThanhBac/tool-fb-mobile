@@ -1,0 +1,257 @@
+[33mcommit 29c7e7b7e91224eaebfdfc4044bc4c5a2d2ef44f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mHoc_Facebook[m[33m, [m[1;31morigin/Hoc_Facebook[m[33m)[m
+Author: Vuhuu29 <anhminhnguyen4050@gmail.com>
+Date:   Mon Sep 29 18:18:20 2025 +0700
+
+    update log_message
+
+[33mcommit 0cc4233d68feef726724db30d0dc00ba9d190567[m
+Author: P4_AI_Pham_Duc_Huy <hoaianlee3030@gmail.com>
+Date:   Thu Sep 25 20:26:45 2025 +0700
+
+    25/09/2025
+
+[33mcommit 1d931b6f7883ad353de8efcc8f293d53bcb295f1[m
+Author: P4_AI_Pham_Duc_Huy <hoaianlee3030@gmail.com>
+Date:   Thu Sep 25 20:26:02 2025 +0700
+
+    Delete zalo_crm_main_test.py
+
+[33mcommit 88e3d3858f494e829daf5e965df2277b214d8c6a[m
+Author: Takadono-Shirayuki <nhatnehihi111@gmail.com>
+Date:   Thu Sep 25 17:40:55 2025 +0700
+
+    sửa luồng đăng nhập
+
+[33mcommit d5d69889c5dc5930e274dbd5c4e3c8d1611fd1b5[m
+Merge: 5f15467 1fc0ad6
+Author: HungHa365 <117704040+HungHa365@users.noreply.github.com>
+Date:   Thu Sep 25 14:13:21 2025 +0700
+
+    Merge branch 'main' of https://github.com/HungHa365/tool-fb-mobile
+
+[33mcommit 5f15467466465a6543176254abae2d1c9d00ec56[m
+Author: HungHa365 <117704040+HungHa365@users.noreply.github.com>
+Date:   Thu Sep 25 14:05:27 2025 +0700
+
+    Update toolfacebook.log
+
+[33mcommit 1fc0ad6fd9fe42036f96d07dbece12af617ec1ff[m
+Author: Takadono-Shirayuki <nhatnehihi111@gmail.com>
+Date:   Thu Sep 25 13:48:02 2025 +0700
+
+    thêm code cập nhật trạng thái tài khoản
+
+[33mcommit 6b4b8831c6f23d6af96f1c4d9c70f0e22bc25fed[m
+Author: P4_AI_Pham_Duc_Huy <hoaianlee3030@gmail.com>
+Date:   Tue Sep 23 17:44:49 2025 +0700
+
+    23/09/2025
+
+[33mcommit b47f0c08c692d6def9a2cf60305a49e7954a998f[m
+Author: Takadono-Shirayuki <nhatnehihi111@gmail.com>
+Date:   Tue Sep 23 17:02:58 2025 +0700
+
+    sửa theo giao diện fb
+
+[33mcommit 92e2ab66e1e453196cc67af11b657e80c2ea6184[m
+Author: Takadono-Shirayuki <nhatnehihi111@gmail.com>
+Date:   Tue Sep 23 16:52:26 2025 +0700
+
+    cấu hình chạy adb cho linux
+
+[33mcommit 88b71fb0fe78cf39da437c7fb9bc63e8d6adc8af[m
+Author: HungHa365 <117704040+HungHa365@users.noreply.github.com>
+Date:   Tue Sep 23 16:24:51 2025 +0700
+
+    cau hinh lai duong dan file trang thai
+
+[33mcommit 77d226b7d6131297ab7f9e4a3f1e695d5e9cc1a1[m
+Author: Takadono-Shirayuki <nhatnehihi111@gmail.com>
+Date:   Tue Sep 23 15:52:11 2025 +0700
+
+    sửa logic tìm homepage
+
+[33mcommit f53cbc7036f8b9c64e38ea0821d8689da9053fac[m
+Author: Takadono-Shirayuki <nhatnehihi111@gmail.com>
+Date:   Tue Sep 23 15:28:28 2025 +0700
+
+    tạo file run cho 2 hệ điều hành
+
+[33mcommit fbbbadcfd2456f05f4f07fa53568337258325195[m
+Author: HungHa365 <117704040+HungHa365@users.noreply.github.com>
+Date:   Tue Sep 23 15:15:20 2025 +0700
+
+    cau hinh may chu
+
+[33mcommit 04bf282a6130c0c37ba8c4794a713bc5e6eb112d[m
+Merge: b21483d bc53736
+Author: HungHa365 <117704040+HungHa365@users.noreply.github.com>
+Date:   Tue Sep 23 14:56:14 2025 +0700
+
+    Merge branch 'Facebook'
+
+[33mcommit b21483d6b141563ccba3a831edc4afe5b2e2db7b[m
+Author: HungHa365 <117704040+HungHa365@users.noreply.github.com>
+Date:   Tue Sep 23 14:23:09 2025 +0700
+
+    Update .gitignore
+
+[33mcommit bc53736a757d5615b18d51bdcbe9cb5d60951203[m[33m ([m[1;31morigin/Facebook[m[33m, [m[1;32mFacebook[m[33m)[m
+Author: HungHa365 <117704040+HungHa365@users.noreply.github.com>
+Date:   Tue Sep 23 14:21:38 2025 +0700
+
+    23/9
+
+[33mcommit 8eaf7111713255d3c991164c05f20826eda3b713[m
+Author: P4_AI_Pham_Duc_Huy <hoaianlee3030@gmail.com>
+Date:   Mon Sep 22 17:45:35 2025 +0700
+
+    22/09/2025 Sửa một số lỗi nhỏ trong quá trình
+
+[33mcommit 906c4c874bcb34e6174166078314115a2d1c5814[m
+Author: P4_AI_Pham_Duc_Huy <hoaianlee3030@gmail.com>
+Date:   Mon Sep 22 17:44:36 2025 +0700
+
+    Delete zalo_crm_main.py
+
+[33mcommit 234501f0f681f117e5920bf2a08e5f9912444bef[m
+Author: Takadono-Shirayuki <nhatnehihi111@gmail.com>
+Date:   Sat Sep 20 12:04:08 2025 +0700
+
+    Update main_lib.py
+
+[33mcommit 5a0088884602acd34c07c770b58d0ea1de0b2356[m
+Merge: 7e5f3e3 47f0c92
+Author: Takadono-Shirayuki <nhatnehihi111@gmail.com>
+Date:   Sat Sep 20 11:57:58 2025 +0700
+
+    Merge branch 'main' of https://github.com/HungHa365/tool-fb-mobile
+
+[33mcommit 7e5f3e30a909975f50787439047b375cc09faafe[m
+Author: Takadono-Shirayuki <nhatnehihi111@gmail.com>
+Date:   Sat Sep 20 11:56:22 2025 +0700
+
+    cập nhật chạy cho linux
+
+[33mcommit 47f0c92a9412a07fb046ea2c47d9e603b1e66526[m
+Author: P4_AI_Pham_Duc_Huy <hoaianlee3030@gmail.com>
+Date:   Sat Sep 20 11:55:03 2025 +0700
+
+    20/092/2025
+
+[33mcommit d8258e0b107727c9e001a8b7dcafc25d59bea3a6[m
+Author: P4_AI_Pham_Duc_Huy <hoaianlee3030@gmail.com>
+Date:   Sat Sep 20 11:54:07 2025 +0700
+
+    Delete zalo_crm_main.py
+
+[33mcommit e1d35da0085e49de01e0dd0a586ce59c3e7b9b3c[m
+Author: Takadono-Shirayuki <nhatnehihi111@gmail.com>
+Date:   Sat Sep 20 10:17:06 2025 +0700
+
+    handle trường hợp bị ban acc
+
+[33mcommit 29f5f0d291b57e8314c8f8267735267afaa506f9[m
+Author: Takadono-Shirayuki <nhatnehihi111@gmail.com>
+Date:   Sat Sep 20 09:43:02 2025 +0700
+
+    sửa lỗi ko vào được trang cá nhân
+
+[33mcommit 3627ae2f240639be7300badc3564a8011264b55d[m
+Author: Takadono-Shirayuki <nhatnehihi111@gmail.com>
+Date:   Sat Sep 20 08:54:14 2025 +0700
+
+    sửa luồng main
+    
+    bỏ kiểm soát task qua status[device_id]
+
+[33mcommit 7039eaa3c640552a9aed5a2b9826e96a256cec4b[m
+Author: P4_AI_Pham_Duc_Huy <hoaianlee3030@gmail.com>
+Date:   Fri Sep 19 18:16:05 2025 +0700
+
+    19/09/2025
+
+[33mcommit 979ff38d0ef5e833f7e54f8cd0804d456c287fae[m
+Author: P4_AI_Pham_Duc_Huy <hoaianlee3030@gmail.com>
+Date:   Fri Sep 19 18:15:41 2025 +0700
+
+    Delete zalo_crm_main.py
+
+[33mcommit b395754df4c11b7978a242bae415701209a8b344[m
+Merge: 8e1ce59 ad7a275
+Author: P4 - AI - Vũ Đức Mạnh <levanloc524.hhp@gmail.com>
+Date:   Fri Sep 19 17:05:41 2025 +0700
+
+    Merge branch 'Facebook'
+
+[33mcommit ad7a275dabf9dfa69c9fae0cc22737b22e24adc6[m
+Author: P4 - AI - Vũ Đức Mạnh <levanloc524.hhp@gmail.com>
+Date:   Fri Sep 19 17:03:37 2025 +0700
+
+    ignore file log
+
+[33mcommit 8e1ce5988e940b625f567baa14310d1143574bff[m
+Merge: d5837b2 0c4ce57
+Author: P4 - AI - Vũ Đức Mạnh <levanloc524.hhp@gmail.com>
+Date:   Fri Sep 19 16:50:20 2025 +0700
+
+    Merge branch 'main' of https://github.com/HungHa365/tool-fb-mobile
+
+[33mcommit d5837b206d1f7338861685cd90fef3440232d376[m
+Author: P4 - AI - Vũ Đức Mạnh <levanloc524.hhp@gmail.com>
+Date:   Fri Sep 19 16:47:06 2025 +0700
+
+    Tối ưu log
+
+[33mcommit 6ef89337488d34e07938519ac6396d25cda28253[m
+Author: P4 - AI - Vũ Đức Mạnh <levanloc524.hhp@gmail.com>
+Date:   Fri Sep 19 16:28:51 2025 +0700
+
+    Đổi sang đọc DEVICE_LIST từ adb thay vì API
+
+[33mcommit 0c4ce57f02ced28bc4283592ca7665d1bb423dc7[m
+Author: Takadono-Shirayuki <nhatnehihi111@gmail.com>
+Date:   Fri Sep 19 09:22:42 2025 +0700
+
+    sửa lỗi đăng bài lên tường
+
+[33mcommit 08ad961a2ab3dbd92ea8d12e21b0d549f6baa8ad[m
+Author: VuDucManh <levanloc524.hhp@gmail.com>
+Date:   Fri Sep 19 09:12:48 2025 +0700
+
+    Thêm tính năng lấy số tk được lưu trong db + sửa lỗi không tìm được tk để chuyển
+
+[33mcommit 6f7b70c01efa401f24e147063fc862b102ef2572[m
+Author: huy3030-alt <hoaianlee3030@gmail.com>
+Date:   Thu Sep 18 18:00:03 2025 +0700
+
+    18/09/2025
+
+[33mcommit bed3f993a97e9bc59fe002d6c0e6e5051b63defa[m
+Author: huy3030-alt <hoaianlee3030@gmail.com>
+Date:   Thu Sep 18 17:59:37 2025 +0700
+
+    Delete zalo_crm_main.py
+
+[33mcommit 1634c2854005a71ccc0bb9252569dc6b6ef54efc[m
+Merge: 7244e61 5e70558
+Author: VuDucManh <levanloc524.hhp@gmail.com>
+Date:   Thu Sep 18 17:50:44 2025 +0700
+
+    Merge branch 'main' of https://github.com/HungHa365/tool-fb-mobile
+
+[33mcommit 5e705584f6f11ae31814910f8272f47c4004316d[m
+Author: HungHa365 <117704040+HungHa365@users.noreply.github.com>
+Date:   Thu Sep 18 17:48:26 2025 +0700
+
+    18/9
+
+[33mcommit 7244e615c208e43a25a5e8b7b644b3f768a5e09a[m
+Author: VuDucManh <levanloc524.hhp@gmail.com>
+Date:   Thu Sep 18 17:44:05 2025 +0700
+
+    refactor file main
+
+[33mcommit b67226aef7085b51e444f3a21e552d35d265959e[m
+Merge: c1833b9 3bafd3f
+Author: Takadono-Shirayuki <nhatnehih

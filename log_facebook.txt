@@ -1,0 +1,310 @@
+Active code page: 65001
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\GitHub\tool-fb-mobile\main.py", line 1, in <module>
+    from fb_task import *
+  File "C:\Users\Admin\Documents\GitHub\tool-fb-mobile\fb_task.py", line 2, in <module>
+    from module.fb_friends import load_facebook_friends_list_advanced
+  File "C:\Users\Admin\Documents\GitHub\tool-fb-mobile\module\__init__.py", line 1, in <module>
+    from .login import *
+  File "C:\Users\Admin\Documents\GitHub\tool-fb-mobile\module\login.py", line 3, in <module>
+    import toolfacebook_lib
+  File "C:\Users\Admin\Documents\GitHub\tool-fb-mobile\toolfacebook_lib.py", line 9, in <module>
+    from util import log_message
+  File "C:\Users\Admin\Documents\GitHub\tool-fb-mobile\util\__init__.py", line 2, in <module>
+    from .my_utils import *
+  File "C:\Users\Admin\Documents\GitHub\tool-fb-mobile\util\my_utils.py", line 5, in <module>
+    from module import DEVICE_LIST_NAME
+ImportError: cannot import name 'DEVICE_LIST_NAME' from partially initialized module 'module' (most likely due to a circular import) (C:\Users\Admin\Documents\GitHub\tool-fb-mobile\module\__init__.py)
+
+C:\Users\Admin\Documents\GitHub\tool-fb-mobile>py main.py
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\GitHub\tool-fb-mobile\main.py", line 1, in <module>
+    from fb_task import *
+  File "C:\Users\Admin\Documents\GitHub\tool-fb-mobile\fb_task.py", line 2, in <module>
+    from module.fb_friends import load_facebook_friends_list_advanced
+  File "C:\Users\Admin\Documents\GitHub\tool-fb-mobile\module\__init__.py", line 1, in <module>
+    from .login import *
+  File "C:\Users\Admin\Documents\GitHub\tool-fb-mobile\module\login.py", line 5, in <module>
+    from module import DEVICE_LIST_NAME
+ImportError: cannot import name 'DEVICE_LIST_NAME' from partially initialized module 'module' (most likely due to a circular import) (C:\Users\Admin\Documents\GitHub\tool-fb-mobile\module\__init__.py)
+
+C:\Users\Admin\Documents\GitHub\tool-fb-mobile>py main.py
+2025-09-29 16:48:44,974 - INFO - Đọc danh sách thiết bị kết nối qua ADB
+2025-09-29 16:48:45,010 - INFO - 📱 Lấy thành công 1 devices từ ADB
+['EM4DYTEITCCYJNFU']
+2025-09-29 16:48:45,031 - ERROR - Lỗi chạy chính: name 'DEVICE_LIST' is not defined
+
+C:\Users\Admin\Documents\GitHub\tool-fb-mobile>py main.py
+2025-09-29 16:49:57,252 - INFO - Đọc danh sách thiết bị kết nối qua ADB
+2025-09-29 16:49:57,291 - INFO - 📱 Lấy thành công 1 devices từ ADB
+['EM4DYTEITCCYJNFU']
+2025-09-29 16:49:59,396 - WARNING - [Máy 0] ✅ Không tìm thấy file status, tiếp tục chạy.
+2025-09-29 16:49:59,594 - INFO - [EM4DYTEITCCYJNFU] Kết nối thiết bị: Thành công.
+2025-09-29 16:50:04,031 - INFO - [Máy 0] Tắt chế độ tự động xoay màn hình hệ thống
+2025-09-29 16:50:04,188 - INFO - [Máy 0] Trạng thái auto-rotation hiện tại: 0
+2025-09-29 16:50:04,345 - INFO - [Máy 0] Đã gửi lệnh tắt auto-rotation qua settings
+2025-09-29 16:50:05,505 - INFO - [Máy 0] Auto-rotation đã được TẮT thành công!
+2025-09-29 16:50:05,506 - INFO - [Máy 0] Trạng thái auto-rotation cuối: TẮT ✅
+2025-09-29 16:50:05,506 - INFO - [Máy 0] Hoàn thành disable auto-rotation
+2025-09-29 16:50:05,506 - INFO - [Máy 0] Kiểm tra bật 1.1.1.1 (một lần)
+2025-09-29 16:50:09,841 - INFO - [Máy 0] One-time check 1.1.1.1 OK
+2025-09-29 16:50:09,842 - INFO - [Máy 0] Kiểm tra cài đặt Termux
+2025-09-29 16:50:33,282 - ERROR - Lỗi khi gọi API để đọc thiết bị EM4DYTEITCCYJNFU: HTTPSConnectionPool(host='socket.hungha365.com', port=4000): Max retries exceeded with url: /api/device/filter (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000011B715BF4F0>, 'Connection to socket.hungha365.com timed out. (connect timeout=10)'))
+2025-09-29 16:50:33,284 - WARNING - [Máy 0] Không tìm thấy dữ liệu cho thiết bị
+2025-09-29 16:50:33,284 - INFO - [Máy 0] Thực hiện tác vụ: Thăm trang cá nhân
+2025-09-29 16:50:33,284 - ERROR - [Máy 0]❌ Lỗi khi chạy luồng Facebook: NameError
+ name 'tham_trang_ca_nhan' is not defined
+
+[EM4DYTEITCCYJNFU]===== LẤY VIỆC TỪ DATABASE 22616467 - Hoàng Linh =====
+[DB 22616467] 🔄 Nạp dữ liệu vào hàng đợi...
+[DB 22616467] ✅ Đã nạp 1 mục vào hàng đợi.
+[⏳] Đợi 4.94 giây...
+Lần 1
+'num_phone_zalo'
+Lần 2
+[⏳] Đợi 4.54 giây...
+[⏳] Đợi 2.79 giây...
+[⏳] Đợi 3.93 giây...
+[API] Đang lấy tin nhắn cho nhân viên ID: 22616467...
+[API] ✅ Lấy tin nhắn từ API thành công.
+[EM4DYTEITCCYJNFU][!] 0358705073 -> Xử lý như chưa kết bạn.
+[⏳] Đợi 3.62 giây...
+[⏳] Đợi 1.13 giây...
+[⏳] Đợi 4.86 giây...
+[⏳] Đợi 5.28 giây...
+[EM4DYTEITCCYJNFU][✓] Đã gửi lời mời kết bạn tới 0358705073
+[⏳] Đợi 6.62 giây...
+[⏳] Đợi 6.82 giây...
+Tên tài khoản hiện tại:  Thùy Linh Td
+Có chạy đến hàm lưu dữ liệu không
+[EM4DYTEITCCYJNFU][✏️] Đang đổi tên 0358705073 thành ''
+[⏳] Đợi 3.92 giây...
+[⏳] Đợi 4.02 giây...
+[⏳] Đợi 2.03 giây...
+[⏳] Đợi 2.75 giây...
+[⏳] Đợi 4.50 giây...
+[⏳] Đợi 5.53 giây...
+[⏳] Đợi 6.29 giây...
+[⏳] Đợi 6.97 giây...
+[⏳] Đợi 6.40 giây...
+[⏳] Đợi 1.43 giây...
+[⏳] Đợi 1.52 giây...
+[⏳] Đợi 1.73 giây...
+[⏳] Đợi 1.30 giây...
+[EM4DYTEITCCYJNFU][✅] Đã đổi tên 0358705073 thành công
+
+[EM4DYTEITCCYJNFU][*] Bắt đầu trích xuất thông tin cho 0358705073...
+[⏳] Đợi 3.28 giây...
+[⏳] Đợi 4.21 giây...
+[⏳] Đợi 2.05 giây...
+[EM4DYTEITCCYJNFU][i] Đã tìm thấy tên trên Zalo: Tố Trinh
+[⏳] Đợi 2.91 giây...
+[EM4DYTEITCCYJNFU][i] Đã xử lý và mã hóa avatar thành công.
+Hoàng Linh Tuyendungns
+Thùy Linh Td
+Hoàng Linh Tuyendung
+Thùy Linh Td
+Thuỳ Linh Td
+Thùy Linh Td
+False
+[EM4DYTEITCCYJNFU][❌] Lỗi tổng khi xử lý 0358705073: list index out of range
+[⏳] Đợi 5.97 giây...
+
+[EM4DYTEITCCYJNFU]🎉 Hoàn tất một vòng xử lý (hàng đợi chung, không trùng số).
+2025-09-29 16:52:56,291 - INFO - [EM4DYTEITCCYJNFU] Kết nối thiết bị: Thành công.
+2025-09-29 16:53:01,022 - INFO - [Máy 0] Tắt chế độ tự động xoay màn hình hệ thống
+2025-09-29 16:53:01,178 - INFO - [Máy 0] Trạng thái auto-rotation hiện tại: 1
+2025-09-29 16:53:01,305 - INFO - [Máy 0] Đã gửi lệnh tắt auto-rotation qua settings
+2025-09-29 16:53:02,449 - INFO - [Máy 0] Auto-rotation đã được TẮT thành công!
+2025-09-29 16:53:02,449 - INFO - [Máy 0] Trạng thái auto-rotation cuối: TẮT ✅
+2025-09-29 16:53:02,449 - INFO - [Máy 0] Hoàn thành disable auto-rotation
+2025-09-29 16:53:02,450 - INFO - [Máy 0] Kiểm tra cài đặt Termux
+2025-09-29 16:53:29,493 - ERROR - Lỗi khi gọi API để đọc thiết bị EM4DYTEITCCYJNFU: HTTPSConnectionPool(host='socket.hungha365.com', port=4000): Max retries exceeded with url: /api/device/filter (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000011B71722080>, 'Connection to socket.hungha365.com timed out. (connect timeout=10)'))
+2025-09-29 16:53:29,494 - WARNING - [Máy 0] Không tìm thấy dữ liệu cho thiết bị
+2025-09-29 16:53:29,494 - INFO - [Máy 0] Thực hiện tác vụ: Xem reels
+2025-09-29 16:53:29,495 - ERROR - [Máy 0]❌ Lỗi khi chạy luồng Facebook: NameError
+ name 'watch_reels' is not defined
+
+[EM4DYTEITCCYJNFU]===== LẤY VIỆC TỪ DATABASE 22616467 - Hoàng Linh =====
+[DB 22616467] 🔄 Nạp dữ liệu vào hàng đợi...
+[DB 22616467] ✅ Đã nạp 1 mục vào hàng đợi.
+[⏳] Đợi 3.64 giây...
+2025-09-29 17:36:07,746 - WARNING - [Máy 0] ❌ Mất kết nối thiết bị, hủy task đang chạy.
+[EM4DYTEITCCYJNFU][❌] Lỗi khi xử lý 0964237168: device 'EM4DYTEITCCYJNFU' not found
+[EM4DYTEITCCYJNFU][❌] Lỗi tổng khi xử lý 0964237168: device 'EM4DYTEITCCYJNFU' not found
+[⏳] Đợi 5.34 giây...
+
+=================================================================
+
+
+Active code page: 65001
+2025-10-01 13:28:35,142 - INFO - Đọc danh sách thiết bị kết nối qua ADB
+2025-10-01 13:28:35,178 - INFO - 📱 Lấy thành công 1 devices từ ADB
+['UWJJOJLB85SO7LIZ']
+2025-10-01 13:28:37,897 - WARNING - [Máy 0] ✅ Không tìm thấy file status, tiếp tục chạy.
+2025-10-01 13:28:38,101 - INFO - [UWJJOJLB85SO7LIZ] Kết nối thiết bị: Thành công.
+2025-10-01 13:28:43,706 - INFO - [Máy 0] Tắt chế độ tự động xoay màn hình hệ thống
+2025-10-01 13:28:43,847 - INFO - [Máy 0] Trạng thái auto-rotation hiện tại: 1
+2025-10-01 13:28:44,004 - INFO - [Máy 0] Đã gửi lệnh tắt auto-rotation qua settings
+2025-10-01 13:28:45,173 - INFO - [Máy 0] Auto-rotation đã được TẮT thành công!
+2025-10-01 13:28:45,175 - INFO - [Máy 0] Trạng thái auto-rotation cuối: TẮT ✅
+2025-10-01 13:28:45,175 - INFO - [Máy 0] Hoàn thành disable auto-rotation
+2025-10-01 13:28:45,175 - INFO - [Máy 0] Kiểm tra bật 1.1.1.1 (một lần)
+2025-10-01 13:28:49,771 - INFO - [Máy 0] One-time check 1.1.1.1 OK
+2025-10-01 13:28:49,772 - INFO - [Máy 0] Kiểm tra cài đặt Termux
+2025-10-01 13:29:09,071 - INFO - [Máy 0] Trạng thái: Homepage
+2025-10-01 13:29:09,072 - INFO - [Máy 0] Đăng xuất
+2025-10-01 13:29:10,917 - INFO - [Máy 0] Trạng thái: Menu
+2025-10-01 13:29:17,353 - INFO - [Máy 0] Đang đăng xuất
+2025-10-01 13:29:24,795 - INFO - [Máy 0] Đăng xuất thành công
+2025-10-01 13:29:24,929 - INFO - [Máy 0] Bắt đầu đăng nhập vào tài khoản Bùi Nhất
+2025-10-01 13:29:48,748 - INFO - [Máy 0] Đăng nhập thành công vào tài khoản Bùi Nhất
+2025-10-01 13:29:49,087 - INFO - [Máy 0] Cập nhật link facebook
+2025-10-01 13:29:49,391 - INFO - [Máy 0] Trạng thái: Homepage
+2025-10-01 13:30:07,480 - INFO - [Máy 0] Đã cập nhật link facebook:
+2025-10-01 13:30:07,482 - INFO - [Máy 0] Thực hiện tác vụ: Lướt tin tuyển dụng
+2025-10-01 13:30:07,482 - INFO - Lướt tin nhóm tuyển dụng
+2025-10-01 13:31:35,206 - INFO - Bắt đầu like post
+2025-10-01 13:31:51,928 - INFO - Đã thả cảm xúc Thương thương
+2025-10-01 13:33:45,261 - INFO - Bắt đầu like post
+2025-10-01 13:34:05,549 - INFO - Đã thả cảm xúc Thương thương
+2025-10-01 13:34:58,030 - INFO - Bắt đầu comment post
+2025-10-01 13:35:21,173 - INFO - Đã comment
+2025-10-01 13:35:21,926 - INFO - Đã thoát giao diện comment
+2025-10-01 13:36:19,270 - INFO - Bắt đầu like post
+2025-10-01 13:36:39,319 - INFO - Đã thả cảm xúc Thích
+2025-10-01 13:38:23,178 - INFO - Bắt đầu like post
+2025-10-01 13:38:37,705 - INFO - Đã thả cảm xúc Thích
+2025-10-01 13:40:15,580 - INFO - Bắt đầu like post
+2025-10-01 13:40:33,048 - INFO - Đã thả cảm xúc Thích
+2025-10-01 13:42:14,142 - INFO - Đã hoàn thành lướt facebook
+2025-10-01 13:42:21,865 - INFO - [Máy 0] Trạng thái: Homepage
+2025-10-01 13:42:27,501 - INFO - [Máy 0] Trạng thái: Homepage
+2025-10-01 13:42:27,502 - INFO - [Máy 0] Thực hiện tác vụ: Kết bạn
+2025-10-01 13:42:27,502 - INFO - Bắt đầu kết bạn
+2025-10-01 13:42:27,654 - INFO - Lấy được response
+2025-10-01 13:42:58,361 - INFO - Đã gửi lời mời kết bạn
+2025-10-01 13:43:04,689 - INFO - [Máy 0] Trạng thái: Homepage
+2025-10-01 13:43:10,735 - INFO - [Máy 0] Trạng thái: Homepage
+2025-10-01 13:43:10,736 - INFO - [Máy 0] Thực hiện tác vụ: Thăm trang cá nhân
+✅ Đã click vào trang cá nhân
+2025-10-01 13:43:34,313 - INFO - [Máy 0] Bắt đầu like post
+2025-10-01 13:43:51,310 - INFO - Đã thả cảm xúc Buồn
+2025-10-01 13:45:07,480 - INFO - [Máy 0] Bắt đầu like post
+2025-10-01 13:45:23,975 - INFO - Đã thả cảm xúc Wow
+2025-10-01 13:46:31,433 - INFO - [Máy 0] Đã hoàn thành lướt facebook
+2025-10-01 13:46:33,973 - INFO - [Máy 0] Trạng thái: Homepage
+2025-10-01 13:46:39,701 - INFO - [Máy 0] Trạng thái: Homepage
+2025-10-01 13:46:39,702 - INFO - [Máy 0] Thực hiện tác vụ: Thăm tường bạn bè
+🎯 Lấy tên Facebook từ profile - Phiên bản cải tiến...
+✅ Đã click vào trang cá nhân
+🔍 Phân tích trang profile...
+💾 Đã lưu XML debug vào profile_debug.xml
+
+✅ THÀNH CÔNG: Bùi_Nhất
+2025-10-01 13:49:44,033 - INFO - ✅ Đã lưu dữ liệu 158 bạn bè vào base_banbe\UWJJOJLB85SO7LIZ_Bùi_Nhất_banbe.json
+2025-10-01 13:49:57,378 - INFO - 🔄 Thăm bạn 1/10: Trần Diễm Quỳnh
+2025-10-01 13:49:57,379 - INFO - 👀 Đang thăm tường: Trần Diễm Quỳnh
+2025-10-01 13:50:01,544 - INFO - ✅ Đã lưu dữ liệu 158 bạn bè vào base_banbe\UWJJOJLB85SO7LIZ_Bùi_Nhất_banbe.json
+2025-10-01 13:50:01,544 - INFO - 📜 Lướt tường với 14 lần và tương tác
+2025-10-01 13:50:39,240 - INFO - Bắt đầu like post
+2025-10-01 13:50:51,913 - INFO - Đã thả cảm xúc Thích
+2025-10-01 13:51:06,478 - INFO - ✅ Đã thăm xong: Trần Diễm Quỳnh
+2025-10-01 13:51:06,481 - INFO - ✅ Đã lưu dữ liệu 158 bạn bè vào base_banbe\UWJJOJLB85SO7LIZ_Bùi_Nhất_banbe.json
+2025-10-01 13:51:09,932 - INFO - 🔄 Thăm bạn 2/10: My Nha
+2025-10-01 13:51:09,933 - INFO - 👀 Đang thăm tường: My Nha
+2025-10-01 13:51:14,756 - INFO - ✅ Đã lưu dữ liệu 158 bạn bè vào base_banbe\UWJJOJLB85SO7LIZ_Bùi_Nhất_banbe.json
+2025-10-01 13:51:14,756 - INFO - 📜 Lướt tường với 14 lần và tương tác
+2025-10-01 13:51:55,242 - INFO - Bắt đầu like post
+2025-10-01 13:52:08,450 - INFO - Đã thả cảm xúc Yêu thích
+2025-10-01 13:52:24,482 - INFO - ✅ Đã thăm xong: My Nha
+2025-10-01 13:52:24,488 - INFO - ✅ Đã lưu dữ liệu 158 bạn bè vào base_banbe\UWJJOJLB85SO7LIZ_Bùi_Nhất_banbe.json
+2025-10-01 13:52:28,483 - INFO - 🔄 Thăm bạn 3/10: Mai Mai
+2025-10-01 13:52:28,484 - INFO - 👀 Đang thăm tường: Mai Mai
+2025-10-01 13:52:33,855 - INFO - ✅ Đã lưu dữ liệu 158 bạn bè vào base_banbe\UWJJOJLB85SO7LIZ_Bùi_Nhất_banbe.json
+2025-10-01 13:52:33,858 - INFO - 📜 Lướt tường với 20 lần và tương tác
+2025-10-01 13:53:12,416 - INFO - Bắt đầu like post
+2025-10-01 13:53:25,400 - INFO - Đã thả cảm xúc Thương thương
+2025-10-01 13:54:03,853 - INFO - ✅ Đã thăm xong: Mai Mai
+2025-10-01 13:54:03,855 - INFO - ✅ Đã lưu dữ liệu 158 bạn bè vào base_banbe\UWJJOJLB85SO7LIZ_Bùi_Nhất_banbe.json
+2025-10-01 13:54:08,747 - INFO - 🔄 Thăm bạn 4/10: Mai Liên
+2025-10-01 13:54:08,748 - INFO - 👀 Đang thăm tường: Mai Liên
+2025-10-01 13:54:13,284 - INFO - ✅ Đã lưu dữ liệu 158 bạn bè vào base_banbe\UWJJOJLB85SO7LIZ_Bùi_Nhất_banbe.json
+2025-10-01 13:54:13,285 - INFO - 📜 Lướt tường với 15 lần và tương tác
+2025-10-01 13:54:52,923 - INFO - Bắt đầu like post
+2025-10-01 13:55:11,107 - INFO - Đã thả cảm xúc Thương thương
+2025-10-01 13:55:31,040 - INFO - ✅ Đã thăm xong: Mai Liên
+2025-10-01 13:55:31,043 - INFO - ✅ Đã lưu dữ liệu 158 bạn bè vào base_banbe\UWJJOJLB85SO7LIZ_Bùi_Nhất_banbe.json
+2025-10-01 13:55:34,692 - INFO - 🔄 Thăm bạn 5/10: Trang Trang
+2025-10-01 13:55:34,693 - INFO - 👀 Đang thăm tường: Trang Trang
+2025-10-01 13:55:38,820 - INFO - ✅ Đã lưu dữ liệu 158 bạn bè vào base_banbe\UWJJOJLB85SO7LIZ_Bùi_Nhất_banbe.json
+2025-10-01 13:55:38,820 - INFO - 📜 Lướt tường với 20 lần và tương tác
+2025-10-01 13:56:16,899 - INFO - Bắt đầu like post
+2025-10-01 13:56:33,620 - ERROR - Không tìm được emotion: Thương thương
+2025-10-01 13:57:12,507 - INFO - ✅ Đã thăm xong: Trang Trang
+2025-10-01 13:57:12,509 - INFO - ✅ Đã lưu dữ liệu 158 bạn bè vào base_banbe\UWJJOJLB85SO7LIZ_Bùi_Nhất_banbe.json
+2025-10-01 13:57:16,913 - INFO - 🔄 Thăm bạn 6/10: Anh Minh
+2025-10-01 13:57:16,913 - INFO - 👀 Đang thăm tường: Anh Minh
+2025-10-01 13:57:21,828 - INFO - ✅ Đã lưu dữ liệu 158 bạn bè vào base_banbe\UWJJOJLB85SO7LIZ_Bùi_Nhất_banbe.json
+2025-10-01 13:57:21,829 - INFO - 📜 Lướt tường với 17 lần và tương tác
+2025-10-01 13:58:02,215 - INFO - Bắt đầu like post
+2025-10-01 13:58:13,510 - INFO - Đã thả cảm xúc Thích
+2025-10-01 13:58:39,213 - INFO - ✅ Đã thăm xong: Anh Minh
+2025-10-01 13:58:39,216 - INFO - ✅ Đã lưu dữ liệu 158 bạn bè vào base_banbe\UWJJOJLB85SO7LIZ_Bùi_Nhất_banbe.json
+2025-10-01 13:58:42,455 - INFO - 🔄 Thăm bạn 7/10: Mạnh Con
+2025-10-01 13:58:42,455 - INFO - 👀 Đang thăm tường: Mạnh Con
+2025-10-01 13:58:47,980 - INFO - 🔍 Không thấy Mạnh Con trên màn hình, bắt đầu lướt tìm kiếm...
+2025-10-01 14:00:49,585 - WARNING - ❌ Không tìm thấy Mạnh Con
+2025-10-01 14:00:54,894 - INFO - 🔄 Thăm bạn 8/10: Nguyễn Thị Loan
+2025-10-01 14:00:54,896 - INFO - 👀 Đang thăm tường: Nguyễn Thị Loan
+2025-10-01 14:01:00,599 - INFO - 🔍 Không thấy Nguyễn Thị Loan trên màn hình, bắt đầu lướt tìm kiếm...
+2025-10-01 14:02:57,710 - WARNING - ❌ Không tìm thấy Nguyễn Thị Loan
+2025-10-01 14:03:02,692 - INFO - 🔄 Thăm bạn 9/10: Anh Duc
+2025-10-01 14:03:02,693 - INFO - 👀 Đang thăm tường: Anh Duc
+2025-10-01 14:03:08,209 - INFO - 🔍 Không thấy Anh Duc trên màn hình, bắt đầu lướt tìm kiếm...
+2025-10-01 14:05:12,902 - WARNING - ❌ Không tìm thấy Anh Duc
+2025-10-01 14:05:16,474 - INFO - 🔄 Thăm bạn 10/10: Ngọc Hoa
+2025-10-01 14:05:16,475 - INFO - 👀 Đang thăm tường: Ngọc Hoa
+2025-10-01 14:05:21,490 - INFO - 🔍 Không thấy Ngọc Hoa trên màn hình, bắt đầu lướt tìm kiếm...
+2025-10-01 14:07:18,826 - WARNING - ❌ Không tìm thấy Ngọc Hoa
+2025-10-01 14:07:24,676 - INFO - 📈 Kết quả: Thăm thành công 6/10 bạn
+2025-10-01 14:07:32,863 - INFO - [Máy 0] Trạng thái: Homepage
+2025-10-01 14:07:32,864 - INFO - [Máy 0] Thực hiện tác vụ: Bình luận thương hiệu
+2025-10-01 14:07:33,060 - WARNING - Máy 0 - ⚠️ Bình luận thương hiệu: Đã đạt KPI, không thể lấy bình luận
+2025-10-01 14:07:39,198 - INFO - [Máy 0] Trạng thái: Homepage
+2025-10-01 14:07:39,199 - INFO - [Máy 0] Thực hiện tác vụ: Xem story
+2025-10-01 14:07:39,199 - INFO - Bắt đầu watch story
+2025-10-01 14:07:39,517 - INFO - [Máy 0] Trạng thái: Homepage
+2025-10-01 14:07:47,060 - INFO - Xem story
+2025-10-01 14:08:56,620 - WARNING - [Máy 0] ❌ Mất kết nối thiết bị, hủy task đang chạy.
+WARNING:retry.api:AdbError: device 'UWJJOJLB85SO7LIZ' not found in adbutils.shell.ShellExtension.app_current, retrying in 0.5 seconds...
+2025-10-01 14:09:05,043 - INFO - [Máy 0] ✅ Kết nối thiết bị đã được khôi phục.
+2025-10-01 14:09:05,373 - INFO - [UWJJOJLB85SO7LIZ] Kết nối thiết bị: Thành công.
+2025-10-01 14:09:09,617 - INFO - [Máy 0] Tắt chế độ tự động xoay màn hình hệ thống
+2025-10-01 14:09:09,743 - INFO - [Máy 0] Trạng thái auto-rotation hiện tại: 1
+2025-10-01 14:09:09,853 - INFO - [Máy 0] Đã gửi lệnh tắt auto-rotation qua settings
+2025-10-01 14:09:10,977 - INFO - [Máy 0] Auto-rotation đã được TẮT thành công!
+2025-10-01 14:09:10,978 - INFO - [Máy 0] Trạng thái auto-rotation cuối: TẮT ✅
+2025-10-01 14:09:10,978 - INFO - [Máy 0] Hoàn thành disable auto-rotation
+2025-10-01 14:09:10,978 - INFO - [Máy 0] Kiểm tra cài đặt Termux
+2025-10-01 14:09:28,545 - INFO - [Máy 0] Trạng thái: Homepage
+2025-10-01 14:09:28,546 - INFO - [Máy 0] Đăng xuất
+2025-10-01 14:09:29,228 - INFO - [Máy 0] Trạng thái: Menu
+2025-10-01 14:09:35,576 - INFO - [Máy 0] Đang đăng xuất
+2025-10-01 14:09:42,995 - INFO - [Máy 0] Đăng xuất thành công
+2025-10-01 14:09:43,067 - INFO - [Máy 0] Bắt đầu đăng nhập vào tài khoản Nguyễn Lai
+2025-10-01 14:10:06,894 - INFO - [Máy 0] Đăng nhập thành công vào tài khoản Nguyễn Lai
+2025-10-01 14:10:07,490 - INFO - [Máy 0] Cập nhật link facebook
+2025-10-01 14:10:07,726 - INFO - [Máy 0] Trạng thái: Homepage
+2025-10-01 14:10:28,284 - ERROR - [Máy 0]❌ Lỗi khi chạy luồng Facebook: UiObjectNotFoundError
+ {'code': -32002, 'data': "Selector [description='Xem cài đặt khác của trang cá nhân']", 'method': 'wait'}
+2025-10-01 14:10:32,672 - INFO - [UWJJOJLB85SO7LIZ] Kết nối thiết bị: Thành công.
+2025-10-01 14:10:37,203 - INFO - [Máy 0] Tắt chế độ tự động xoay màn hình hệ thống
+2025-10-01 14:10:37,345 - INFO - [Máy 0] Trạng thái auto-rotation hiện tại: 1
+2025-10-01 14:10:37,485 - INFO - [Máy 0] Đã gửi lệnh tắt auto-rotation qua settings
+2025-10-01 14:10:38,641 - INFO - [Máy 0] Auto-rotation đã được TẮT thành công!
+2025-10-01 14:10:38,642 - INFO - [Máy 0] Trạng thái auto-rotation cuối: TẮT ✅
+2025-10-01 14:10:38,642 - INFO - [Máy 0] Hoàn thành disable auto-rotation
+2025-10-01 14:10:38,642 - INFO - [Máy 0] Kiểm tra cài đặt Termux
+2025-10-01 14:11:28,650 - INFO - [Máy 0] Bắt đầu đăng nhập vào tài khoản Phương Bình
+2025-10-01 14:11:34,975 - WARNING - [Máy 0] ❌ Mất kết nối thiết bị, hủy task đang chạy.

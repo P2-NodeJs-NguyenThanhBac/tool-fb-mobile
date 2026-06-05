@@ -1,0 +1,4698 @@
+[
+  {
+    "_id": {
+      "$oid": "68c37328ffa20123e84f0333"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A04",
+    "device_id": "7HYP4T4XTS4DXKCY",
+    "current_account": "",
+    "time_logged_in": null,
+    "accounts": [
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c37328ffa20123e84f0334"
+        },
+        "account": "0962453658",
+        "password": "Hhp123456",
+        "name": "Nguyễn Tuấn Dương",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c37328ffa20123e84f0336"
+        },
+        "account": "0792108958",
+        "password": "Hhp1234@",
+        "name": "Nguyễn Thị Ánh",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69dee0d6a898d39c5480b7cc"
+        },
+        "account": "0797264521",
+        "password": "hang123#",
+        "name": "Phạm Hằng",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69df3b50a898d39c5480bf3c"
+        },
+        "account": "nguyentuanfb123409@gmail.com",
+        "password": "nguyentuanfb123",
+        "name": "Nguyễn Tuấn",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028a575ee5f18fcc586b99"
+        },
+        "account": "0798715417",
+        "password": "trantuan123a@",
+        "name": "Trần Tuân",
+        "status": "Online"
+      }
+    ],
+    "createdAt": 1757639464323,
+    "updatedAt": 1778551383445,
+    "__v": 38,
+    "status": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0964876703",
+        "num_phone_zalo": "0964876703",
+        "password": "Thanhtu1",
+        "name": "Đỗ Xuân Tú",
+        "status": "Offline"
+      },
+      {
+        "account": "0968082574",
+        "num_phone_zalo": "0968082574",
+        "password": "hhp123456",
+        "name": "Hoàng Cả",
+        "status": "Offline"
+      },
+      {
+        "account": "0978722184",
+        "num_phone_zalo": "0978722184",
+        "password": "Hhp123@",
+        "name": "Quang Trung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c37343ffa20123e84f033a"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A06",
+    "device_id": "CEIN4X45I7ZHFEFU",
+    "current_account": "",
+    "time_logged_in": null,
+    "accounts": [
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c37343ffa20123e84f033b"
+        },
+        "account": "0973418952",
+        "password": "Hhp123456@",
+        "name": "Huy Bùi",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c37343ffa20123e84f033d"
+        },
+        "account": "0972381905",
+        "password": "Hhp123456",
+        "name": "Tiến Thành",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c37343ffa20123e84f033e"
+        },
+        "account": "0792177628",
+        "password": "Hhp1234@",
+        "name": "Trịnh Thị Vân",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c37343ffa20123e84f033e"
+        },
+        "account": "0384423560",
+        "password": "hhp123@#",
+        "name": "Hoàng Lê",
+        "status": "Online",
+        "facebook_link": {
+          "$oid": "69461f97976c077d36ca34c3"
+        }
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028ab45ee5f18fcc587645"
+        },
+        "account": "0797384061",
+        "password": "hhp.123@",
+        "name": "Trang Ngọc",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639491869,
+    "updatedAt": 1778551476072,
+    "__v": 28,
+    "status": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:56.588Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:56.588Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:56.588Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0973418952",
+        "num_phone_zalo": "0973418952",
+        "password": "Hhp123456@",
+        "name": "Châu Nguyễn",
+        "status": "Offline"
+      },
+      {
+        "account": "0971412658",
+        "num_phone_zalo": "0971412658",
+        "password": "hhp123456",
+        "name": "Ngô Dung",
+        "status": "Offline"
+      },
+      {
+        "account": "0961991742",
+        "num_phone_zalo": "0961991742",
+        "password": "timviec365",
+        "name": "Minh Hiếu",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c37406ffa20123e84f0341"
+    },
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "device_name": "A15",
+    "device_id": "QK8TEMKZMBYHPV6P",
+    "current_account": "",
+    "time_logged_in": null,
+    "accounts": [
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c37406ffa20123e84f0342"
+        },
+        "account": "0984485936",
+        "password": "hhp123456@",
+        "name": "Ly Ly",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c37406ffa20123e84f0343"
+        },
+        "account": "0865772900",
+        "password": "Hungha@365",
+        "name": "Lạc Lạc",
+        "status": "Online",
+        "facebook_link": "https://www.facebook.com/share/17mmtnG3Rb/"
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c37406ffa20123e84f0344"
+        },
+        "account": "0968082574",
+        "password": "Hungha@365",
+        "name": "Mộc Mộc",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c37406ffa20123e84f0345"
+        },
+        "account": "0979068173",
+        "password": "Hhp1234@",
+        "name": "Bùi Thị Hạnh",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69dda70041697ddbdcf43b07"
+        },
+        "account": "0798376684",
+        "password": "Thuwhungha@365",
+        "name": "Thư Kim",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639686401,
+    "updatedAt": 1776133888314,
+    "__v": 13,
+    "status": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:47.596Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:47.596Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:47.596Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0984485936",
+        "num_phone_zalo": "0984485936",
+        "password": "Hungha@365",
+        "name": "Lưu Thư Timviec",
+        "status": "Offline"
+      },
+      {
+        "account": "0942180356",
+        "num_phone_zalo": "0942180356",
+        "password": "Hungha@365",
+        "name": "Thư Tìm Việc Ba Sáu Năm",
+        "status": "Offline"
+      },
+      {
+        "account": "0941181652",
+        "num_phone_zalo": "0941181652",
+        "password": "Thuwagh@365",
+        "name": "Anh Thư",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c37412ffa20123e84f0348"
+    },
+    "user": {
+      "name": "Lê Thùy",
+      "crm_id": "22636101"
+    },
+    "device_name": "A16",
+    "device_id": "IJP78949G69DKNHM",
+    "current_account": "",
+    "time_logged_in": null,
+    "accounts": [
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37412ffa20123e84f0349"
+        },
+        "account": "0356468640",
+        "password": "timviec365.vn",
+        "name": "Tú Uyên",
+        "status": "Online",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37412ffa20123e84f034a"
+        },
+        "account": "0987608429",
+        "password": "timviec365.vn",
+        "name": "Lê Thuỳ",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c37412ffa20123e84f034b"
+        },
+        "account": "0337416995",
+        "password": "timviec365.vn",
+        "name": "Trần Vy",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37412ffa20123e84f034c"
+        },
+        "account": "0978086571",
+        "password": "Hhp1234@",
+        "name": "Phan Thị Thu Hồng",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddb2a941697ddbdcf43b88"
+        },
+        "account": "0798576103",
+        "password": "hungha365",
+        "name": "Vy Vy",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639698874,
+    "updatedAt": 1776136873567,
+    "__v": 13,
+    "status": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0987608429",
+        "num_phone_zalo": "0987608429",
+        "password": "hungha365",
+        "name": "Lê Thuỳ Timviec",
+        "status": "Offline"
+      },
+      {
+        "account": "0941523285",
+        "num_phone_zalo": "0941523285",
+        "password": "timviec365.vn",
+        "name": "Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0942165628",
+        "num_phone_zalo": "0942165628",
+        "password": "ngodung168",
+        "name": "Lê Thùy Tuyendung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c3741effa20123e84f034f"
+    },
+    "user": {
+      "name": "Nhàn",
+      "crm_id": "22789191"
+    },
+    "device_name": "A14",
+    "device_id": "F6NZ5LRKWWGACYQ8",
+    "current_account": "0946430089",
+    "time_logged_in": {
+      "$date": "2026-05-21T16:46:16.587Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c3741effa20123e84f0350"
+        },
+        "account": "0913591672",
+        "password": "hungha365",
+        "name": "Minh Nguyệt",
+        "status": "Offline",
+        "facebook_link": "https://www.facebook.com/share/17WFnVvLzX/"
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c3741effa20123e84f0351"
+        },
+        "account": "0359615945",
+        "password": "hungha365",
+        "name": "Thanh Nhàn Tuyendung",
+        "status": "Online",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c3741effa20123e84f0353"
+        },
+        "account": "0946430089",
+        "password": "Hhp123@",
+        "name": "Nguyễn Thùy Linh",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddbbab41697ddbdcf43c15"
+        },
+        "account": "0797132892",
+        "password": "hungha365",
+        "name": "TdThanh Nhàn",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028cbd5ee5f18fcc58b2da"
+        },
+        "account": "0813109617",
+        "password": "hungha365",
+        "name": "Minh Thông",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639710077,
+    "updatedAt": 1778551997903,
+    "__v": 11,
+    "status": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:21:57.512Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:21:57.512Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:21:57.512Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0913591672",
+        "num_phone_zalo": "0913591672",
+        "password": "hungha365",
+        "name": "Thanh Nhàn Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0359615945",
+        "num_phone_zalo": "0359615945",
+        "password": "timviec365",
+        "name": "Thanh Nhàn Hr",
+        "status": "Offline"
+      },
+      {
+        "account": "0972381905",
+        "num_phone_zalo": "0972381905",
+        "password": "Hhp123456",
+        "name": "Thanh Nhàn Timviec",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c3742affa20123e84f0356"
+    },
+    "user": {
+      "name": "Hoàng Linh",
+      "crm_id": "22616467"
+    },
+    "device_name": "A17",
+    "device_id": "EM4DYTEITCCYJNFU",
+    "current_account": "0961963671",
+    "time_logged_in": {
+      "$date": "2026-05-21T11:11:53.363Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3742affa20123e84f0357"
+        },
+        "account": "0981208813",
+        "password": "abc13579",
+        "name": "Mai Mei",
+        "status": "Offline",
+        "facebook_link": ""
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3742affa20123e84f0358"
+        },
+        "account": "0966117160",
+        "password": "Hlinh93*",
+        "name": "Lin Hoàng",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3742affa20123e84f0359"
+        },
+        "account": "0961963671",
+        "password": "Hlinh93*",
+        "name": "Lin Lin",
+        "status": "Offline",
+        "facebook_link": "https://www.facebook.com/profile.php?id=61579659840887&mibextid=ZbWKwL"
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3742affa20123e84f035a"
+        },
+        "account": "0966578630",
+        "password": "Hlinh1993*",
+        "name": "HT Linh",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a0ae01498c822ba1cf25411"
+        },
+        "account": "chivuquynh822@gmail.com",
+        "password": "chi12345@#",
+        "name": "Chi Quỳnh Hoa",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639722038,
+    "updatedAt": 1779097620588,
+    "__v": 8,
+    "status": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0966117160",
+        "num_phone_zalo": "0966117160",
+        "password": "Hlinh1993*",
+        "name": "Tuyendung Ns",
+        "status": "Offline"
+      },
+      {
+        "account": "0961963671",
+        "num_phone_zalo": "0961963671",
+        "password": "Hlinh1993*",
+        "name": "Hoàng Linh Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0966578630",
+        "num_phone_zalo": "0966578630",
+        "password": "Hlinh1993*",
+        "name": "Thuỳ Linh Td",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c37433ffa20123e84f035d"
+    },
+    "user": {
+      "name": "Huyền Trang",
+      "crm_id": "22896992"
+    },
+    "device_name": "A13",
+    "device_id": "EY5H9DJNIVNFH6OR",
+    "current_account": "",
+    "time_logged_in": null,
+    "accounts": [
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37433ffa20123e84f035e"
+        },
+        "account": "0968581455",
+        "password": "Hhp12389",
+        "name": "Huyền Trang Timviec",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37433ffa20123e84f035f"
+        },
+        "account": "0964102485",
+        "password": "hhp882025",
+        "name": "Huyền Trang Tuyendung",
+        "status": "Online",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37433ffa20123e84f0360"
+        },
+        "account": "0987610815",
+        "password": "hhp882025",
+        "name": "Huyền Trang",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37433ffa20123e84f0360"
+        },
+        "account": "0792340256",
+        "password": "Hhp1234@#",
+        "name": "Nguyễn Chi",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028c905ee5f18fcc58ad83"
+        },
+        "account": "0812835623",
+        "password": "Timviec123!",
+        "name": "An Nhiên",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639731907,
+    "updatedAt": 1778551952404,
+    "__v": 17,
+    "status": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:21:44.268Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:21:44.268Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:21:44.268Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0968581455",
+        "num_phone_zalo": "0968581455",
+        "password": "Hhp12389",
+        "name": "Huyền Trang Timviecvn",
+        "status": "Offline"
+      },
+      {
+        "account": "0964102485",
+        "num_phone_zalo": "0964102485",
+        "password": "Hhp8998123",
+        "name": "Huyền Trang Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0987610815",
+        "num_phone_zalo": "0987610815",
+        "password": "Hhp998123",
+        "name": "Chie Nguyeenx",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c37441ffa20123e84f0364"
+    },
+    "user": {
+      "name": "Ngọc Mai",
+      "crm_id": "22885921"
+    },
+    "device_name": "A18",
+    "device_id": "PN59BMHYPFXCPN8T",
+    "current_account": "0852124925",
+    "time_logged_in": {
+      "$date": "2026-05-20T13:10:53.277Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c37441ffa20123e84f0365"
+        },
+        "account": "0966338017",
+        "password": "Timviec365@",
+        "name": "Hoàng Maii",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c37441ffa20123e84f0366"
+        },
+        "account": "0982470403",
+        "password": "0909Maye@",
+        "name": "Mai Thị",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c37441ffa20123e84f0367"
+        },
+        "account": "0963563276",
+        "password": "Hhp123@",
+        "name": "Nguyễn Thị Ánh",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c37441ffa20123e84f0368"
+        },
+        "account": "0978025150",
+        "password": "Hhp123@",
+        "name": "Nguyễn Minh Phượng",
+        "status": "Online",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028cfb5ee5f18fcc58b905"
+        },
+        "account": "0852124925",
+        "password": "timviec365",
+        "name": "Mơ Mơ",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639745736,
+    "updatedAt": 1778552059339,
+    "__v": 9,
+    "status": true,
+    "adb_connected": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:56.785Z"
+    },
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "last_seen": {
+      "$date": "2026-05-22T08:31:56.785Z"
+    },
+    "rabbit_connected": true,
+    "updated_at": {
+      "$date": "2026-05-22T08:31:56.785Z"
+    },
+    "accounts_zalo": [
+      {
+        "account": "0798376684",
+        "num_phone_zalo": "0798376684",
+        "password": "timviec365",
+        "name": "Ngọc Mai tìm việc ba sáu năm",
+        "status": "Offline"
+      },
+      {
+        "account": "0383757614",
+        "num_phone_zalo": "0383757614",
+        "password": "timviec365@",
+        "name": "Ngọc Mai Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0982470403",
+        "num_phone_zalo": "0982470403",
+        "password": "timviec356",
+        "name": "Hoàng Mai Timviec",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c3744bffa20123e84f036b"
+    },
+    "user": {
+      "name": "Bích Ngọc",
+      "crm_id": "22814414"
+    },
+    "device_name": "A19",
+    "device_id": "Z5LVOF4PRGXGTS9H",
+    "current_account": "",
+    "time_logged_in": null,
+    "accounts": [
+      {
+        "emp_id": "22985046",
+        "_id": {
+          "$oid": "68c3744bffa20123e84f036c"
+        },
+        "account": "0988658315",
+        "password": "hh1234@",
+        "name": "Ngoc Viji",
+        "status": "Offline",
+        "facebook_link": "https://www.facebook.com/share/17J1B8jx1X/"
+      },
+      {
+        "emp_id": "22985046",
+        "_id": {
+          "$oid": "68c3744bffa20123e84f036d"
+        },
+        "account": "0961718346",
+        "password": "hh1234@",
+        "name": "Ngọc Vi",
+        "status": "Offline",
+        "facebook_link": "https://www.facebook.com/share/17J1B8jx1X/"
+      },
+      {
+        "emp_id": "22985046",
+        "_id": {
+          "$oid": "68c3744bffa20123e84f036e"
+        },
+        "account": "0967791241",
+        "password": "hh1234@",
+        "name": "Vi Vi",
+        "status": "Offline",
+        "facebook_link": "https://www.facebook.com/share/17XPSQt3SU/"
+      },
+      {
+        "emp_id": "22985046",
+        "_id": {
+          "$oid": "68c3744bffa20123e84f036f"
+        },
+        "account": "0792185628",
+        "password": "hh1234@",
+        "name": "Bùi Thị Hồng",
+        "status": "Online",
+        "facebook_link": "https://www.facebook.com/share/16tQiGr4vY/"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028d305ee5f18fcc58beb4"
+        },
+        "account": "0852584826",
+        "password": "Dung123456",
+        "name": "Hoàng Quyên",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639755071,
+    "updatedAt": 1778552112555,
+    "__v": 14,
+    "status": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0988658315",
+        "num_phone_zalo": "0988658315",
+        "password": "Hhp1234@",
+        "name": "Ngọc Vi Timviec Ba Sáu Năm",
+        "status": "Offline"
+      },
+      {
+        "account": "0338734680",
+        "num_phone_zalo": "0338734680",
+        "password": "Hhp1234@",
+        "name": "Ngô Dung Tìm Việc",
+        "status": "Offline"
+      },
+      {
+        "account": "0967791241",
+        "num_phone_zalo": "0967791241",
+        "password": "Hhp1234@",
+        "name": "Phương Linh",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c37454ffa20123e84f0372"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A21",
+    "device_id": "R8YY70F81TV",
+    "current_account": "0975365214",
+    "time_logged_in": {
+      "$date": "2026-05-20T13:51:45.765Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22985046",
+        "_id": {
+          "$oid": "68c37454ffa20123e84f0373"
+        },
+        "account": "0979524615",
+        "password": "Timviec365@",
+        "name": "Hồng Nhung",
+        "status": "Offline"
+      },
+      {
+        "emp_id": "22985046",
+        "_id": {
+          "$oid": "68c37454ffa20123e84f0374"
+        },
+        "account": "0973067853",
+        "password": "Timviec365@",
+        "name": "Linh Mai",
+        "status": "Offline"
+      },
+      {
+        "emp_id": "22985046",
+        "_id": {
+          "$oid": "68c37454ffa20123e84f0375"
+        },
+        "account": "0962104081",
+        "password": "Timviec365@",
+        "name": "Thuý Ngân",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985046",
+        "_id": {
+          "$oid": "68c37454ffa20123e84f0376"
+        },
+        "account": "0975365214",
+        "password": "Hhp123456@",
+        "name": "Nguyễn Hà",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028d935ee5f18fcc58ca9a"
+        },
+        "account": "0852595294",
+        "password": "Timviec365@",
+        "name": "Kiều Nguyễn",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639764432,
+    "updatedAt": 1778552211540,
+    "__v": 6,
+    "status": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:55.522Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:55.522Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:55.522Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0978086571",
+        "num_phone_zalo": "0978086571",
+        "password": "Timviec365@",
+        "name": "Kim Thanh",
+        "status": "Offline"
+      },
+      {
+        "account": "0812232296",
+        "num_phone_zalo": "0812232296",
+        "password": "Timviec365@",
+        "name": "Tuệ An",
+        "status": "Offline"
+      },
+      {
+        "account": "0979068173",
+        "num_phone_zalo": "0979068173",
+        "password": "Timviec365@",
+        "name": "Phạm Thảo",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c3745effa20123e84f0379"
+    },
+    "user": {
+      "name": "Hoàng Linh",
+      "crm_id": "22616467"
+    },
+    "device_name": "A12",
+    "device_id": "MJZDFY896TMJBUPN",
+    "current_account": "0797626947",
+    "time_logged_in": {
+      "$date": "2026-05-21T20:12:49.751Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c3745effa20123e84f037a"
+        },
+        "account": "0367614180",
+        "password": "anh123#",
+        "name": "An Hoàng",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c3745effa20123e84f037b"
+        },
+        "account": "0966049501",
+        "password": "anh123#",
+        "name": "Hoàng Yến",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c3745effa20123e84f037c"
+        },
+        "account": "0975629854",
+        "password": "anh123#",
+        "name": "Chip Chip Le",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c3745effa20123e84f037d"
+        },
+        "account": "0975947930",
+        "password": "anh123#",
+        "name": "Trà My Hà",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028c575ee5f18fcc58a75a"
+        },
+        "account": "0797626947",
+        "password": "timviec365",
+        "name": "Ánh Thư",
+        "status": "Online"
+      }
+    ],
+    "createdAt": 1757639774975,
+    "updatedAt": 1778551895992,
+    "__v": 14,
+    "status": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:19:44.400Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:19:44.400Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:19:44.400Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0344331495",
+        "num_phone_zalo": "0344331495",
+        "password": "Hhp123456",
+        "name": "Lê Liên",
+        "status": "Offline"
+      },
+      {
+        "account": "0975629854",
+        "num_phone_zalo": "0975629854",
+        "password": "anh123#",
+        "name": "Minh Minh",
+        "status": "Offline"
+      },
+      {
+        "account": "0966049501",
+        "num_phone_zalo": "0966049501",
+        "password": "anh123#",
+        "name": "Ngọc Nguyễn",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c3746cffa20123e84f0380"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A22",
+    "device_id": "69QGMN8PXWDYPNIF",
+    "current_account": "0888908140",
+    "time_logged_in": {
+      "$date": "2026-05-20T19:18:02.968Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3746cffa20123e84f0383"
+        },
+        "account": "0987151142",
+        "password": "abc123456#",
+        "name": "Yến Lê",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3746cffa20123e84f0384"
+        },
+        "account": "0984676250",
+        "password": "abc123456#",
+        "name": "Lê Hải Yến",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3746cffa20123e84f0384"
+        },
+        "account": "0888908140",
+        "password": "Vuvantruong11072003",
+        "name": "Nguyễn Hân",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3746cffa20123e84f0384"
+        },
+        "account": "0987680154",
+        "password": "abc123456#",
+        "name": "Lê Thị Hải Yến",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028dbf5ee5f18fcc58cf33"
+        },
+        "account": "0822084865",
+        "password": "abc123456789#",
+        "name": "Thảo Linh",
+        "status": "Online"
+      }
+    ],
+    "createdAt": 1757639788367,
+    "updatedAt": 1778552255562,
+    "__v": 10,
+    "status": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:21:45.452Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:21:45.452Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:21:45.452Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0987151142",
+        "num_phone_zalo": "0987151142",
+        "password": "abc123456789#",
+        "name": "Lê Hải Yến",
+        "status": "Offline"
+      },
+      {
+        "account": "0984676250",
+        "num_phone_zalo": "0984676250",
+        "password": "abc123456789#",
+        "name": "Lê Yến Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0987680154",
+        "num_phone_zalo": "0987680154",
+        "password": "abc123456789#",
+        "name": "Hải Yến Lê",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c37475ffa20123e84f0388"
+    },
+    "user": {
+      "name": "Hoàng Linh",
+      "crm_id": "22616467"
+    },
+    "device_name": "A11",
+    "device_id": "YH9TSS7XCMPFZHNR",
+    "current_account": "0355242254",
+    "time_logged_in": {
+      "$date": "2026-05-20T15:00:57.513Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37475ffa20123e84f0389"
+        },
+        "account": "0979836643",
+        "password": "ngocanh9999",
+        "name": "Tran Anh",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37475ffa20123e84f038a"
+        },
+        "account": "0964427374",
+        "password": "Hhp123456@",
+        "name": "My Nha",
+        "status": "Online",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37475ffa20123e84f038b"
+        },
+        "account": "0355242254",
+        "password": "Timviec365@",
+        "name": "Ang Ngọc",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37475ffa20123e84f038c"
+        },
+        "account": "0984524843",
+        "password": "Hhp123@",
+        "name": "Trần Bảo Trâm",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a0ad4a398c822ba1cf25189"
+        },
+        "account": "vuhalinh773@gmail.com",
+        "password": "ha12345#",
+        "name": "Linh Hạ Vũ",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639797946,
+    "updatedAt": 1779094691995,
+    "__v": 16,
+    "status": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:56.923Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:56.923Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:56.923Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0972223710",
+        "num_phone_zalo": "0972223710",
+        "password": "timviec365",
+        "name": "Mai Hương Timviec",
+        "status": "Offline"
+      },
+      {
+        "account": "0355242254",
+        "num_phone_zalo": "0355242254",
+        "password": "timviec365.vn",
+        "name": "Mai Hương Hr",
+        "status": "Offline"
+      },
+      {
+        "account": "0975365214",
+        "num_phone_zalo": "0975365214",
+        "password": "Hhp1234@#",
+        "name": "Hương Mai Timviec",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c3747fffa20123e84f038f"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A23",
+    "device_id": "IZDEGA8TFYXWRK9X",
+    "current_account": "0942165628",
+    "time_logged_in": {
+      "$date": "2026-05-21T16:33:24.413Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22985046",
+        "_id": {
+          "$oid": "68c3747fffa20123e84f0391"
+        },
+        "account": "0394497296",
+        "password": "timviec365",
+        "name": "Quỳnh Quỳnh",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985046",
+        "_id": {
+          "$oid": "68c3747fffa20123e84f0392"
+        },
+        "account": "0969824645",
+        "password": "timviec365@/",
+        "name": "Anh Minh",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985046",
+        "_id": {
+          "$oid": "68c3747fffa20123e84f0393"
+        },
+        "account": "nguonlucviet365@gmail.com",
+        "password": "hh1234568$",
+        "name": "Trang Minh",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985046",
+        "_id": {
+          "$oid": "68c3747fffa20123e84f0393"
+        },
+        "account": "0792304256",
+        "password": "HB1234@",
+        "name": "Bách Hoàng",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddc23da898d39c5480ad28"
+        },
+        "account": "0942165628",
+        "password": "timviec365",
+        "name": "Minh Trí",
+        "status": "Online"
+      }
+    ],
+    "createdAt": 1757639807559,
+    "updatedAt": 1776140861371,
+    "__v": 8,
+    "status": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:56.542Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:56.542Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:56.542Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0946410089",
+        "num_phone_zalo": "0946410089",
+        "password": "Hhp123568@",
+        "name": "Minh Hưng",
+        "status": "Offline"
+      },
+      {
+        "account": "0946430089",
+        "num_phone_zalo": "0946430089",
+        "password": "HH123589#",
+        "name": "Thiên Bình",
+        "status": "Offline"
+      },
+      {
+        "account": "0792195628",
+        "num_phone_zalo": "0792195628",
+        "password": "HP123456!",
+        "name": "Bạch Dương",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c37490ffa20123e84f0396"
+    },
+    "user": {
+      "name": "Hoàng Linh",
+      "crm_id": "22616467"
+    },
+    "device_name": "A10",
+    "device_id": "EQLNQ8O7EQCQPFXG",
+    "current_account": "0797513827",
+    "time_logged_in": {
+      "$date": "2026-05-21T20:57:19.658Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37490ffa20123e84f0397"
+        },
+        "account": "0978847104",
+        "password": "Hhp123456@",
+        "name": "Thư Minh",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37490ffa20123e84f0398"
+        },
+        "account": "0978152541",
+        "password": "Timviec365@",
+        "name": "Thư Ngô",
+        "status": "Offline"
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37490ffa20123e84f0399"
+        },
+        "account": "0964390961",
+        "password": "Hhp123@",
+        "name": "Nguyễn Thị Hường",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c37490ffa20123e84f039a"
+        },
+        "account": "0964403502",
+        "password": "Timviec365@",
+        "name": "Nguyễn Hà",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028c145ee5f18fcc589f93"
+        },
+        "account": "0797513827",
+        "password": "timviec365",
+        "name": "Nguyễn Thương",
+        "status": "Online"
+      }
+    ],
+    "createdAt": 1757639824733,
+    "updatedAt": 1778551828585,
+    "__v": 12,
+    "status": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0978847104",
+        "num_phone_zalo": "0978847104",
+        "password": "timviec365@",
+        "name": "Phương Linh",
+        "status": "Offline"
+      },
+      {
+        "account": "0975947930",
+        "num_phone_zalo": "0975947930",
+        "password": "Timviec365@",
+        "name": "Nhi Nhi",
+        "status": "Offline"
+      },
+      {
+        "account": "0964390961",
+        "num_phone_zalo": "0964390961",
+        "password": "Timviec365@",
+        "name": "Minh Phương",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c3749affa20123e84f039d"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A24",
+    "device_id": "R8YY70HCNRX",
+    "current_account": "",
+    "time_logged_in": null,
+    "accounts": [
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3749affa20123e84f039e"
+        },
+        "account": "0832111220",
+        "password": "Timviec123@",
+        "name": "Quỳnh Diễm",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3749affa20123e84f039f"
+        },
+        "account": "0792226894",
+        "password": "Hhp123@",
+        "name": "Trần Diễm Quỳnh",
+        "status": "Online",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3749affa20123e84f03a0"
+        },
+        "account": "0942436914",
+        "password": "Timviec@",
+        "name": "Diễm Quỳnh",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3749affa20123e84f03a1"
+        },
+        "account": "0852866068",
+        "password": "hoa123@",
+        "name": "Ngọc Hoa",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69dde940a898d39c5480b036"
+        },
+        "account": "0942805759",
+        "password": "maianh123",
+        "name": "Mai Anh",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639834403,
+    "updatedAt": 1776150848357,
+    "__v": 5,
+    "status": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:55.469Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:55.469Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:55.469Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0832111220",
+        "num_phone_zalo": "0832111220",
+        "password": "Timviec123",
+        "name": "Diễm Quỳnh Tìm Việc",
+        "status": "Offline"
+      },
+      {
+        "account": "0792226894",
+        "num_phone_zalo": "0792226894",
+        "password": "Anh123",
+        "name": "Đỗ Quỳnh Anh",
+        "status": "Offline"
+      },
+      {
+        "account": "0942436914",
+        "num_phone_zalo": "0942436914",
+        "password": "Phuong123",
+        "name": "Mai Phương Tuyendung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c374a6ffa20123e84f03a4"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A25",
+    "device_id": "R83Y50JZK6A",
+    "current_account": "",
+    "time_logged_in": null,
+    "accounts": [
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c374a6ffa20123e84f03a5"
+        },
+        "account": "0792216895",
+        "password": "Timviec234@",
+        "name": "Linh Trang",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c374a6ffa20123e84f03a6"
+        },
+        "account": "0792226891",
+        "password": "Timviec234@",
+        "name": "Nguyễn Linh Trang",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c374a6ffa20123e84f03a7"
+        },
+        "account": "0853594468",
+        "password": "Timviec234@",
+        "name": "Linhh Trangg",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c374a6ffa20123e84f5a37"
+        },
+        "account": "0792347982",
+        "password": "Timviec234@",
+        "name": "Anh Mai",
+        "status": "Online",
+        "facebook_link": "null"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddb34a41697ddbdcf43b9e"
+        },
+        "account": "0822003984",
+        "password": "Huy123!",
+        "name": "Huy Diệp",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639846956,
+    "updatedAt": 1776137034223,
+    "__v": 5,
+    "status": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0792216895",
+        "num_phone_zalo": "0792216895",
+        "password": "Hang123@",
+        "name": "Hằng Tìm Việc",
+        "status": "Offline"
+      },
+      {
+        "account": "0941185980",
+        "num_phone_zalo": "0941185980",
+        "password": "H123456#",
+        "name": "Thanh Huyền",
+        "status": "Offline"
+      },
+      {
+        "account": "0941294983",
+        "num_phone_zalo": "0941294983",
+        "password": "Tung123#",
+        "name": "Hoàng Tùng",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c374b0ffa20123e84f03aa"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A09",
+    "device_id": "9PAM7DIFW87DOBEU",
+    "current_account": "",
+    "time_logged_in": null,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028bb35ee5f18fcc589398"
+        },
+        "account": "0797142630",
+        "password": "Dung123456",
+        "name": "Trần Hà My",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a0eb9a5ba35ebff0c2af442"
+        },
+        "account": "61578343023688",
+        "password": "son111",
+        "name": "Nam Trieu Phong",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a0eb9b4ba35ebff0c2af44b"
+        },
+        "account": "61578134744365",
+        "password": "son111",
+        "name": "Nhi Lâm",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639856614,
+    "updatedAt": 1779349940351,
+    "__v": 21,
+    "status": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:57.133Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:57.133Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:57.133Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0988003410",
+        "num_phone_zalo": "0988003410",
+        "password": "ngodung168",
+        "name": "Ngô Dung Hr",
+        "status": "Offline"
+      },
+      {
+        "account": "0798582093",
+        "num_phone_zalo": "0798582093",
+        "password": "ngodung168",
+        "name": "Ngô Dung Tuyendung Ba Sáu Năm",
+        "status": "Offline"
+      },
+      {
+        "account": "0395459520",
+        "num_phone_zalo": "0395459520",
+        "password": "ngodung168",
+        "name": "Ngô Dung Tuyendung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c374c9ffa20123e84f03b1"
+    },
+    "user": {
+      "name": "Ngọc Hà",
+      "crm_id": "22889226"
+    },
+    "device_name": "A08",
+    "device_id": "CQIZKJ8P59AY7DHI",
+    "current_account": "0969824937",
+    "time_logged_in": {
+      "$date": "2026-05-21T20:39:21.599Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c374c9ffa20123e84f03b2"
+        },
+        "account": "0971207216",
+        "password": "timviec365@ ",
+        "name": "Ánh Tuyết",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c374c9ffa20123e84f03b3"
+        },
+        "account": "0963101851",
+        "password": "timviec365",
+        "name": "Hoa Mai",
+        "status": "Offline",
+        "facebook_link": "https://www.facebook.com/share/1Cw1fwA2Jy/"
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c374c9ffa20123e84f03b4"
+        },
+        "account": "0969824937",
+        "password": "timviec365",
+        "name": "Anh Kim",
+        "status": "Online",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22991647",
+        "_id": {
+          "$oid": "68c374c9ffa20123e84f03b5"
+        },
+        "account": "0946410089",
+        "password": "Hhp123@",
+        "name": "Phạm Thị Phương",
+        "status": "Offline",
+        "facebook_link": "https://www.facebook.com/share/1F93UQYvAz/"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028b345ee5f18fcc5884f5"
+        },
+        "account": "0797496642",
+        "password": "timviec365",
+        "name": "Hồng Thu",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639881091,
+    "updatedAt": 1778551604883,
+    "__v": 12,
+    "status": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:56.511Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:56.511Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:56.511Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0971207216",
+        "num_phone_zalo": "0971207216",
+        "password": "timviec365@",
+        "name": "Ngọc Hà Tìm Việc",
+        "status": "Offline"
+      },
+      {
+        "account": "0832086515",
+        "num_phone_zalo": "0832086515",
+        "password": "timviec365",
+        "name": "Mới: Anh Thư",
+        "status": "Offline"
+      },
+      {
+        "account": "0969824937",
+        "num_phone_zalo": "0969824937",
+        "password": "timviec365",
+        "name": "Ngọc Hà",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c374d2ffa20123e84f03b8"
+    },
+    "user": {
+      "name": "Hải Yến",
+      "crm_id": "22894754"
+    },
+    "device_name": "A07",
+    "device_id": "8HMN4T9575HAQWLN",
+    "current_account": "",
+    "time_logged_in": null,
+    "accounts": [
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374d2ffa20123e84f03b9"
+        },
+        "account": "haiyentimviecc365@gmail.com",
+        "password": "hhp123456",
+        "name": "Hoàng Yến",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374d2ffa20123e84f03ba"
+        },
+        "account": "0982305784",
+        "password": "hhp123456",
+        "name": "Yến Timviec",
+        "status": "Online",
+        "facebook_link": "https://www.facebook.com/share/17L3RscNFX/"
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374d2ffa20123e84f03bb"
+        },
+        "account": "0973106450",
+        "password": "hhp123456",
+        "name": "Hải Yến Timviec",
+        "status": "Offline",
+        "facebook_link": "https://www.facebook.com/share/17WmAih69P/"
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374d2ffa20123e84f03bc"
+        },
+        "account": "0792195628",
+        "password": "Hhp1234@",
+        "name": "Nguyễn Khánh Vy",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028af25ee5f18fcc587d38"
+        },
+        "account": "0797496514",
+        "password": "hhp123456",
+        "name": "Lê Ngọc Hoài Phương",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639890243,
+    "updatedAt": 1778551538107,
+    "__v": 14,
+    "status": false,
+    "adb_connected": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:19:47.202Z"
+    },
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "last_seen": {
+      "$date": "2026-05-22T08:19:47.202Z"
+    },
+    "rabbit_connected": true,
+    "updated_at": {
+      "$date": "2026-05-22T08:19:47.202Z"
+    },
+    "accounts_zalo": [
+      {
+        "account": "0978585641",
+        "num_phone_zalo": "0978585641",
+        "password": "hhp123456",
+        "name": "Hải Yến Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0982305784",
+        "num_phone_zalo": "0982305784",
+        "password": "hhp123456",
+        "name": "Hải Yến Timviec",
+        "status": "Offline"
+      },
+      {
+        "account": "0973106450",
+        "num_phone_zalo": "0973106450",
+        "password": "hhp123456",
+        "name": "Hải Yến",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c374dbffa20123e84f03bf"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A05",
+    "device_id": "UWJJOJLB85SO7LIZ",
+    "current_account": "0968581455",
+    "time_logged_in": {
+      "$date": "2026-05-20T13:05:39.829Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374dbffa20123e84f03c0"
+        },
+        "account": "0968581455",
+        "password": "hhp882025",
+        "name": "Bùi Nhất",
+        "status": "Offline"
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374dbffa20123e84f03c1"
+        },
+        "account": "0978382842",
+        "password": "hhp123456",
+        "name": "Nguyễn Lai",
+        "status": "Online",
+        "facebook_link": "https://www.facebook.com/share/1CZeTfe1Lc/",
+        "facebook_id": "61578991931458"
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374dbffa20123e84f03c2"
+        },
+        "account": "0971335869",
+        "password": "timviec365@",
+        "name": "Phương Bình",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374dbffa20123e84f03c3"
+        },
+        "account": "0941295235",
+        "password": "Hhp1234@",
+        "name": "Nguyễn Thị Bình",
+        "status": "Offline",
+        "facebook_link": "https://www.facebook.com/share/1ELXcTffQE/"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028a875ee5f18fcc587112"
+        },
+        "account": "0797264930",
+        "password": "timviec365@",
+        "name": "Giang Ngân",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639899495,
+    "updatedAt": 1778551431459,
+    "__v": 25,
+    "status": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:57.026Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:57.026Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:57.026Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0852039719",
+        "num_phone_zalo": "0852039719",
+        "password": "timviec365@123",
+        "name": "Lê Thị Liên",
+        "status": "Offline"
+      },
+      {
+        "account": "0963563276",
+        "num_phone_zalo": "0963563276",
+        "password": "timviec365",
+        "name": "Nguyễn Hiếu",
+        "status": "Offline"
+      },
+      {
+        "account": "0798491605",
+        "num_phone_zalo": "0798491605",
+        "password": "timviec365@",
+        "name": "Hưng Phạm",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c374e4ffa20123e84f03c6"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A03",
+    "device_id": "TSPNH6GYZLPJBY6X",
+    "current_account": "0983407428",
+    "time_logged_in": {
+      "$date": "2026-05-20T21:03:40.308Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374e4ffa20123e84f03c7"
+        },
+        "account": "0967791241",
+        "password": "Hhp123456",
+        "name": "Phương Lê",
+        "status": "Offline"
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374e4ffa20123e84f03c8"
+        },
+        "account": "0983407428",
+        "password": "hhp123988@",
+        "name": "Phương Nhi",
+        "status": "Offline",
+        "facebook_link": "https://www.facebook.com/share/17MYd9Dg1Z/"
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374e4ffa20123e84f03c9"
+        },
+        "account": "0852039719",
+        "password": "hhp123456@",
+        "name": "Trang Trịnh",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374e4ffa20123e84f03ca"
+        },
+        "account": "0946703089",
+        "password": "Hhp123@ ",
+        "name": "Phạm Phương Vy",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028a115ee5f18fcc586416"
+        },
+        "account": "0941162845",
+        "password": "Hhp.123",
+        "name": "Thu Thủy",
+        "status": "Online"
+      }
+    ],
+    "createdAt": 1757639908859,
+    "updatedAt": 1778551313391,
+    "__v": 32,
+    "status": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:57.086Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:57.086Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:57.086Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0941295235",
+        "num_phone_zalo": "0941295235",
+        "password": "Hhp123988@",
+        "name": "Ánh Dương",
+        "status": "Offline"
+      },
+      {
+        "account": "0978025150",
+        "num_phone_zalo": "0978025150",
+        "password": "timviec365",
+        "name": "Quang Huy",
+        "status": "Offline"
+      },
+      {
+        "account": "0941219816",
+        "num_phone_zalo": "0941219816",
+        "password": "Hhp123988",
+        "name": "nh Thư",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c374f6ffa20123e84f03cd"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A02",
+    "device_id": "7DXCUKKB6DVWDAQO",
+    "current_account": "",
+    "time_logged_in": null,
+    "accounts": [
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374f6ffa20123e84f03ce"
+        },
+        "account": "0385765903",
+        "password": "Hh123456@@",
+        "name": "Mẫn Nhi",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374f6ffa20123e84f03cf"
+        },
+        "account": "0383757614",
+        "password": "timviec365@",
+        "name": "Linh Nhi",
+        "status": "Online",
+        "facebook_link": "https://www.facebook.com/share/1JtyArgRwb/"
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374f6ffa20123e84f03d0"
+        },
+        "account": "0987608429",
+        "password": "timviec365@",
+        "name": "Nguyễn Quân",
+        "status": "Offline"
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c374f6ffa20123e84f03d1"
+        },
+        "account": "0792189855",
+        "password": "Hhp1234@",
+        "name": "Phạm Thị Hường",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a0289d05ee5f18fcc585d7f"
+        },
+        "account": "0798941254",
+        "password": "timviec365@",
+        "name": "Phạm Minh Anh",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639926041,
+    "updatedAt": 1778551248888,
+    "__v": 27,
+    "status": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:20:01.814Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:20:01.814Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:20:01.814Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0385765903",
+        "num_phone_zalo": "0385765903",
+        "password": "timviec365@123",
+        "name": "Timviec Ba Sáu Năm",
+        "status": "Offline"
+      },
+      {
+        "account": "0969106521",
+        "num_phone_zalo": "0969106521",
+        "password": "timviec365",
+        "name": "Thanh Tú",
+        "status": "Offline"
+      },
+      {
+        "account": "0963904347",
+        "num_phone_zalo": "0963904347",
+        "password": "hhp123456",
+        "name": "Phương Anh",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c37504ffa20123e84f03d4"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A01",
+    "device_id": "R8YY70F5MKN",
+    "current_account": "",
+    "time_logged_in": null,
+    "accounts": [
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c37504ffa20123e84f03d5"
+        },
+        "account": "0334304530",
+        "password": "Hhp123456",
+        "name": "Nguyễn Dương",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c37504ffa20123e84f03d6"
+        },
+        "account": "0963904347",
+        "password": "hhp1176411",
+        "name": "Lê Hoa Hà",
+        "status": "Online",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c37504ffa20123e84f03d7"
+        },
+        "account": "0792198893",
+        "password": "Hhp1234@",
+        "name": "Nguyễn Thị Loan",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22985047",
+        "_id": {
+          "$oid": "68c37504ffa20123e84f03d8"
+        },
+        "account": "0961991742",
+        "password": "Hhp12345@",
+        "name": "Duyên Lê",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a0289705ee5f18fcc585358"
+        },
+        "account": "0798942164",
+        "password": "timviec365@",
+        "name": "Thao Vy Lee",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": 1757639940059,
+    "updatedAt": 1778551152508,
+    "__v": 32,
+    "status": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:56.629Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:56.629Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:56.629Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0962104081",
+        "num_phone_zalo": "0962104081",
+        "password": "timviec365",
+        "name": "Hoàng Long",
+        "status": "Offline"
+      },
+      {
+        "account": "0966025713",
+        "num_phone_zalo": "0966025713",
+        "password": "timviec365",
+        "name": "Mạnh Duy",
+        "status": "Offline"
+      },
+      {
+        "account": "0798492537",
+        "num_phone_zalo": "0798492537",
+        "password": "timviec365@",
+        "name": "Lê Anh Vũ",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68c3a477314a1025d881ae69"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A20",
+    "device_id": "EIFYAALRK7U4MRZ9",
+    "current_account": "0814280858",
+    "time_logged_in": {
+      "$date": "2026-05-21T21:01:01.342Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3a477314a1025d881ae6a"
+        },
+        "account": "0979700834",
+        "password": "Ngocminh02",
+        "name": "Minh Ngọc",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3a477314a1025d881ae6b"
+        },
+        "account": "0966025713",
+        "password": "Timviec365@",
+        "name": "Nguyễn Đức",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3a477314a1025d881ae6c"
+        },
+        "account": "0814280858",
+        "password": "Timviec365@",
+        "name": "Ngọc Minh",
+        "status": "Online",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c3a477314a1025d881ae6c"
+        },
+        "password": "Tien123@",
+        "name": "Ngọc Tiên",
+        "status": "Offline",
+        "facebook_link": null,
+        "account": "0792305156"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028d5b5ee5f18fcc58c411"
+        },
+        "account": "0812269950",
+        "password": "timviec365",
+        "name": "My Hoàng",
+        "status": "Offline"
+      }
+    ],
+    "__v": 10,
+    "createdAt": 1757652087832,
+    "updatedAt": 1778552155858,
+    "status": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:56.685Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:56.685Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:56.685Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0979700834",
+        "num_phone_zalo": "0979700834",
+        "password": "Ngocminh02",
+        "name": "Minh Ánh",
+        "status": "Offline"
+      },
+      {
+        "account": "0964403502",
+        "num_phone_zalo": "0964403502",
+        "password": "Timviec365@",
+        "name": "Trà My",
+        "status": "Offline"
+      },
+      {
+        "account": "0978152541",
+        "num_phone_zalo": "0978152541",
+        "password": "Timviec365@",
+        "name": "Hải Yến",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "68d4f6522e88f71a1cb9dd28"
+    },
+    "user": {
+      "name": "Mai Phương",
+      "crm_id": "22918353"
+    },
+    "device_name": "A26",
+    "device_id": "R8YY70F5VSE",
+    "current_account": "",
+    "time_logged_in": null,
+    "status": true,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69f8096bf2160f1bb58421ca"
+        },
+        "account": "0822336076",
+        "password": "Duong@123",
+        "name": "Minh Dương",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69f809adf2160f1bb58421d1"
+        },
+        "account": "0822317756",
+        "password": "timviec365@",
+        "name": "Minh Quân",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028e615ee5f18fcc58de48"
+        },
+        "account": "0822030676",
+        "password": "timviec365@",
+        "name": "Minh Hưng",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028e765ee5f18fcc58e09f"
+        },
+        "account": "0822129649",
+        "password": "hungha365",
+        "name": "Minh Trí",
+        "status": "Offline"
+      }
+    ],
+    "__v": 17,
+    "createdAt": 1758787154271,
+    "updatedAt": 1778552438956,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:50.509Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:50.509Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:50.509Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0852027089",
+        "num_phone_zalo": "0852027089",
+        "password": "HP123456@",
+        "name": "Thanh Nhàn Hr",
+        "status": "Offline"
+      },
+      {
+        "account": "0832007044",
+        "num_phone_zalo": "0832007044",
+        "password": "HP123456@",
+        "name": "Thanh Nhàn Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0792340256",
+        "num_phone_zalo": "0792340256",
+        "password": "HP123456@",
+        "name": "Thanh Nhàn Timviec",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69a5580194d5baf03af6755e"
+    },
+    "user": {
+      "name": "Ngô Dung",
+      "crm_id": "22615833"
+    },
+    "device_name": "A28",
+    "device_id": "R7AYA03PVXF",
+    "current_account": "0798273705",
+    "time_logged_in": {
+      "$date": "2026-05-21T20:43:32.766Z"
+    },
+    "accounts": [
+      {
+        "emp_id": "22994447",
+        "_id": {
+          "$oid": "68c37328ffa20123e84f0834"
+        },
+        "account": "0987844742",
+        "password": "mai123988@",
+        "name": "Mai Thanh",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "_id": {
+          "$oid": "68c37328ffa20123e84f0535"
+        },
+        "account": "0987175374",
+        "password": "hoai123456@",
+        "name": "Hoài Kim",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22994447",
+        "_id": {
+          "$oid": "68c37328ffa20123e84f0336"
+        },
+        "account": "0984303572",
+        "password": "chau123@",
+        "name": "Minh Châu",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22614471",
+        "account": "0798273705",
+        "password": "Nam1234@",
+        "name": "Nguyễn Hải Nam",
+        "status": "Online",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028ea25ee5f18fcc58e625"
+        },
+        "account": "0832304822",
+        "password": "Linh123#",
+        "name": "Tiến Linh",
+        "status": "Offline"
+      }
+    ],
+    "createdAt": {
+      "$numberLong": "1757639464323"
+    },
+    "updatedAt": 1778552482367,
+    "__v": 17,
+    "status": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:30:35.373Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:30:35.373Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:30:35.373Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0798273705",
+        "num_phone_zalo": "0798273705",
+        "password": "mai123988@",
+        "name": "Lê Liên",
+        "status": "Offline"
+      },
+      {
+        "account": "0798271691",
+        "num_phone_zalo": "0798271691",
+        "password": "hoai123456@",
+        "name": "Kim Hoài",
+        "status": "Offline"
+      },
+      {
+        "account": "0797886934",
+        "num_phone_zalo": "0797886934",
+        "password": "chau123@",
+        "name": "Minh Châu",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69a55b3b94d5baf03af6755f"
+    },
+    "user": {
+      "name": "Mai Phương",
+      "crm_id": "22918353"
+    },
+    "device_name": "A27",
+    "device_id": "R7AY904590L",
+    "current_account": "0798941487",
+    "time_logged_in": {
+      "$date": "2026-05-20T20:59:23.191Z"
+    },
+    "status": false,
+    "accounts": [
+      {
+        "emp_id": "22985046",
+        "_id": {
+          "$oid": "68d4f6522e88f71a1cb9dd29"
+        },
+        "account": "0798271691",
+        "password": "van1234@",
+        "name": "Vân Bích",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "68d4f6522e88f71a1cb9dd2a"
+        },
+        "account": "0797790893",
+        "password": "ngan998@",
+        "name": "Thuý Ngân Lê",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddacf941697ddbdcf43b49"
+        },
+        "account": "0942180356",
+        "password": "Timviec365",
+        "name": "Phương Minh",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69f80a0df2160f1bb58421de"
+        },
+        "account": "0852020081",
+        "password": "Vu@12345",
+        "name": "Vũ Hoàng",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a0a84abbd509248ac2bac18"
+        },
+        "account": "0798941487",
+        "password": "timviec365",
+        "name": "Nguyễn Thi",
+        "status": "Online"
+      }
+    ],
+    "__v": 16,
+    "createdAt": {
+      "$numberLong": "1758787154271"
+    },
+    "updatedAt": 1779074219191,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:30:33.218Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:30:33.218Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:30:33.218Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0792304256",
+        "num_phone_zalo": "0792304256",
+        "password": "Hhp123988@",
+        "name": "Ngan Timviec",
+        "status": "Offline"
+      },
+      {
+        "account": "0987244950",
+        "num_phone_zalo": "0987244950",
+        "password": "Timviec6@",
+        "name": "Phạm Hiếu",
+        "status": "Offline"
+      },
+      {
+        "account": "0792305156",
+        "num_phone_zalo": "0792305156",
+        "password": "Hhp123988@",
+        "name": "Timviec Ngan",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69cb95b62c9d4f2243ce42d3"
+    },
+    "user": {
+      "name": "Mai Phương",
+      "crm_id": "22918353"
+    },
+    "device_name": "A29",
+    "device_id": "R7AY90450PB",
+    "current_account": "",
+    "time_logged_in": null,
+    "status": true,
+    "accounts": [
+      {
+        "emp_id": "22775957",
+        "_id": {
+          "$oid": "68d4f6522e88f71a1cb9dd29"
+        },
+        "account": "0941181652",
+        "password": "hungha@365",
+        "name": "Thư Ánh",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22775957",
+        "_id": {
+          "$oid": "68d4f6522e88f71a1cb9dd2a"
+        },
+        "account": "0941801258",
+        "password": "Thuwhungha@365",
+        "name": "Minh Thư",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69d5ab5fd34df5566425a7db"
+        },
+        "account": "0798474372",
+        "password": "Thuwhungha@365",
+        "name": "Thư An",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69dc9df841697ddbdcf4308e"
+        },
+        "account": "0942107993",
+        "password": "Thuwhungha@365",
+        "name": "Hạ Thư",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028ec95ee5f18fcc58e9d8"
+        },
+        "account": "0852028722",
+        "password": "Thuhungha@365",
+        "name": "Ánh Phương",
+        "status": "Offline"
+      }
+    ],
+    "__v": 17,
+    "createdAt": {
+      "$numberLong": "1758787154271"
+    },
+    "updatedAt": 1778552521235,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:34:07.316Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:34:07.316Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:34:07.316Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": false,
+    "accounts_zalo": [
+      {
+        "account": "0985771347",
+        "num_phone_zalo": "0985771347",
+        "password": "Hungha@365",
+        "name": "Thư Tìm Việc Ba Sáu Năm",
+        "status": "Offline"
+      },
+      {
+        "account": "0941801258",
+        "num_phone_zalo": "0941801258",
+        "password": "Thuwhungha@365",
+        "name": "Kim Thư",
+        "status": "Offline"
+      },
+      {
+        "account": "0798474372",
+        "num_phone_zalo": "0798474372",
+        "password": "Thuwhungha@365",
+        "name": "An Thư",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69cb96972c9d4f2243ce42d4"
+    },
+    "user": {
+      "name": "Mai Phương",
+      "crm_id": "22918353"
+    },
+    "device_name": "A30",
+    "device_id": "R7AYA024LHM",
+    "current_account": "0797890360",
+    "time_logged_in": {
+      "$date": "2026-05-21T20:42:13.800Z"
+    },
+    "status": false,
+    "accounts": [
+      {
+        "emp_id": "22775957",
+        "_id": {
+          "$oid": "68d4f6522e88f71a1cb9dd29"
+        },
+        "account": "0942018655",
+        "password": "timviec365.vn",
+        "name": "Nha Uyên",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": "22775957",
+        "_id": {
+          "$oid": "68d4f6522e88f71a1cb9dd2a"
+        },
+        "account": "0798523107",
+        "password": "timviec365.vn",
+        "name": "Thuỳ Lee",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69dda8c841697ddbdcf43b22"
+        },
+        "account": "0797014220",
+        "password": "timviec365.vn",
+        "name": "Thùy Linh",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69dda90c41697ddbdcf43b28"
+        },
+        "account": "0797890360",
+        "password": "timviec365.vn",
+        "name": "Thùy Ánh",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028f045ee5f18fcc58efe1"
+        },
+        "account": "0852288415",
+        "password": "timviec365.vn",
+        "name": "Thùy Vy",
+        "status": "Offline"
+      }
+    ],
+    "__v": 13,
+    "createdAt": {
+      "$numberLong": "1758787154271"
+    },
+    "updatedAt": 1778552580317,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0942018655",
+        "num_phone_zalo": "0942018655",
+        "password": "timviec365.vn",
+        "name": "Lee Thuỳ",
+        "status": "Offline"
+      },
+      {
+        "account": "0798523107",
+        "num_phone_zalo": "0798523107",
+        "password": "timviec365.vn",
+        "name": "Lee Lee",
+        "status": "Offline"
+      },
+      {
+        "account": "0797014220",
+        "num_phone_zalo": "0797014220",
+        "password": "timviec365.vn",
+        "name": "Thuỳ Anh",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69cb97312c9d4f2243ce42d5"
+    },
+    "user": {
+      "name": "Mai Phương",
+      "crm_id": "22918353"
+    },
+    "device_name": "A31",
+    "device_id": "R7AY5100QSK",
+    "current_account": "0798582093",
+    "time_logged_in": {
+      "$date": "2026-05-21T09:38:14.953Z"
+    },
+    "status": true,
+    "accounts": [
+      {
+        "emp_id": "22775957",
+        "_id": {
+          "$oid": "68d4f6522e88f71a1cb9dd29"
+        },
+        "account": "0797243096",
+        "password": "hhp123456",
+        "name": "Khánh My",
+        "status": "Offline",
+        "facebook_link": null
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69dda99241697ddbdcf43b2b"
+        },
+        "account": "0798693845",
+        "password": "hhp123456",
+        "name": "Thảo Thanh",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6faad2346dc062408d1b1"
+        },
+        "account": "0941738293",
+        "password": "hhp1234@",
+        "name": "Phương Uyên",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fac62346dc062408d1b6"
+        },
+        "account": "0798582093",
+        "password": "P12345#",
+        "name": "Phương Khánh",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028f305ee5f18fcc58f4bc"
+        },
+        "account": "0812421497",
+        "password": "hhp123456",
+        "name": "Phạm Phương Oanh",
+        "status": "Offline"
+      }
+    ],
+    "__v": 10,
+    "createdAt": {
+      "$numberLong": "1758787154271"
+    },
+    "updatedAt": 1778552624745,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:31:56.733Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:31:56.733Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:31:56.733Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0941738293",
+        "num_phone_zalo": "0941738293",
+        "password": "hhp123456",
+        "name": "Khánh Vy Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0797243096",
+        "num_phone_zalo": "0797243096",
+        "password": "hhp123456",
+        "name": "Khánh My",
+        "status": "Offline"
+      },
+      {
+        "account": "0798693845",
+        "num_phone_zalo": "0798693845",
+        "password": "hhp123456",
+        "name": "Phạm Phương Thảo",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69ddb34941697ddbdcf43b9b"
+    },
+    "time_logged_in": null,
+    "device_name": "A38",
+    "device_id": "R7AYA03L5TX",
+    "current_account": "",
+    "status": true,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1776137033891,
+    "updatedAt": 1779349729010,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a0bc05498c822ba1cf27529"
+        },
+        "account": "61578501690591",
+        "password": "timviec365@",
+        "name": "Đào Minh Hạnh",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a0bc07298c822ba1cf27537"
+        },
+        "account": "61578562169496",
+        "password": "timviec365@",
+        "name": "Mai Trang Đào",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a0eb8e1ba35ebff0c2af42b"
+        },
+        "account": "61578118245086",
+        "password": "son111",
+        "name": "Kỳ Duyên",
+        "status": "Offline"
+      }
+    ],
+    "__v": 7,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:34:07.355Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:34:07.355Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:34:07.355Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0797138671",
+        "num_phone_zalo": "0797138671",
+        "password": "Dung123456",
+        "name": "Ngô Dung tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0797142861",
+        "num_phone_zalo": "0797142861",
+        "password": "Dung123456",
+        "name": "Thùy Dung",
+        "status": "Offline"
+      },
+      {
+        "account": "0797142630",
+        "num_phone_zalo": "0797142630",
+        "password": "Dung123456",
+        "name": "Ngọc Quyên",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69ddb4e841697ddbdcf43bb8"
+    },
+    "time_logged_in": {
+      "$date": "2026-05-21T09:25:48.637Z"
+    },
+    "device_name": "A33",
+    "device_id": "R7AYA03NAAX",
+    "current_account": "0852586426",
+    "status": true,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1776137448610,
+    "updatedAt": 1778552700591,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddb52d41697ddbdcf43bbd"
+        },
+        "account": "0797381342",
+        "password": "timviec365@",
+        "name": "Hoang Anh",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddb55841697ddbdcf43bc2"
+        },
+        "account": "0797381692",
+        "password": "timviec365@",
+        "name": "Anh Minh",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fbb52346dc062408d1c9"
+        },
+        "account": "0797380931",
+        "password": "timviec365@",
+        "name": "Minh Huyền",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fbc92346dc062408d1cc"
+        },
+        "account": "0941727093",
+        "password": "timviec365@",
+        "name": "Ly Nguyễn",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028f7c5ee5f18fcc58fd68"
+        },
+        "account": "0852586426",
+        "password": "timviec365",
+        "name": "Minh Thư",
+        "status": "Offline"
+      }
+    ],
+    "__v": 6,
+    "adb_connected": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:34:02.914Z"
+    },
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "last_seen": {
+      "$date": "2026-05-22T08:34:02.914Z"
+    },
+    "rabbit_connected": true,
+    "updated_at": {
+      "$date": "2026-05-22T08:34:02.914Z"
+    },
+    "accounts_zalo": [
+      {
+        "account": "0797381692",
+        "num_phone_zalo": "0797381692",
+        "password": "timviec365@",
+        "name": "Minh Anh",
+        "status": "Offline"
+      },
+      {
+        "account": "0797381342",
+        "num_phone_zalo": "0797381342",
+        "password": "timviec365@",
+        "name": "Hoàng Anh",
+        "status": "Offline"
+      },
+      {
+        "account": "0797380931",
+        "num_phone_zalo": "0797380931",
+        "password": "timviec365@",
+        "name": "Bảo Khang",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69ddb5a841697ddbdcf43bc8"
+    },
+    "time_logged_in": {
+      "$date": "2026-05-21T21:08:13.790Z"
+    },
+    "device_name": "A34",
+    "device_id": "R7AY9041APV",
+    "current_account": "0813501906",
+    "status": false,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1776137640156,
+    "updatedAt": 1778552754655,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddb63841697ddbdcf43bcb"
+        },
+        "account": "0798141784",
+        "password": "anh12345@",
+        "name": "Minh Ánh",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddb6d841697ddbdcf43bd2"
+        },
+        "account": "0798270837",
+        "password": "anh12345#",
+        "name": "Linh Hà",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddb6fc41697ddbdcf43bd7"
+        },
+        "account": "0797608924",
+        "password": "duong123@",
+        "name": "Ánh Dương",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fc0c2346dc062408d1d1"
+        },
+        "account": "0941219816",
+        "password": "Hhp.1426@",
+        "name": "Ánh Ngọc",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028fb25ee5f18fcc5903b9"
+        },
+        "account": "0813501906",
+        "password": "Timviec365@",
+        "name": "Minh Thư",
+        "status": "Online"
+      }
+    ],
+    "__v": 5,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0798141784",
+        "num_phone_zalo": "0798141784",
+        "password": "dat12345@",
+        "name": "Tiến Đạt",
+        "status": "Offline"
+      },
+      {
+        "account": "0797264530",
+        "num_phone_zalo": "0797264530",
+        "password": "Nguyenvan2304",
+        "name": "Unknow1",
+        "status": "Offline"
+      },
+      {
+        "account": "0798270837",
+        "num_phone_zalo": "0798270837",
+        "password": "Nguyenhoa2205",
+        "name": "Unknow2",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69ddb73141697ddbdcf43bdc"
+    },
+    "time_logged_in": {
+      "$date": "2026-05-21T16:46:05.391Z"
+    },
+    "device_name": "A42",
+    "device_id": "R7AY60D7AWN",
+    "current_account": "0813620998",
+    "status": true,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1776138033090,
+    "updatedAt": 1776746055088,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fdfb2346dc062408d214"
+        },
+        "account": "0813620998",
+        "password": "Hungha365",
+        "name": "Lê Đào",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fe102346dc062408d217"
+        },
+        "account": "0832073744",
+        "password": "0909Maye@",
+        "name": "Quynh Anh",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fe242346dc062408d21e"
+        },
+        "account": "0797264530",
+        "password": "Quan123@",
+        "name": "Quân Lê",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fe472346dc062408d224"
+        },
+        "account": "0941458929",
+        "password": "timviec365",
+        "name": "Mận Mận",
+        "status": "Offline"
+      }
+    ],
+    "__v": 5,
+    "adb_connected": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:34:06.286Z"
+    },
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "last_seen": {
+      "$date": "2026-05-22T08:34:06.286Z"
+    },
+    "rabbit_connected": true,
+    "updated_at": {
+      "$date": "2026-05-22T08:34:06.286Z"
+    },
+    "accounts_zalo": [
+      {
+        "account": "0813620998",
+        "num_phone_zalo": "0813620998",
+        "password": "timviec365",
+        "name": "Mai Hoàng tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0832073744",
+        "num_phone_zalo": "0832073744",
+        "password": "timviec365",
+        "name": "Hoang Mai",
+        "status": "Offline"
+      },
+      {
+        "account": "0813109617",
+        "num_phone_zalo": "0813109617",
+        "password": "timviec365@",
+        "name": "Mai Tuyendung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69ddb74f41697ddbdcf43bdf"
+    },
+    "time_logged_in": null,
+    "device_name": "A39",
+    "device_id": "R7AY9040YYK",
+    "current_account": "",
+    "status": false,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1776138063972,
+    "updatedAt": 1778552804579,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddb7cd41697ddbdcf43be8"
+        },
+        "account": "0798938637",
+        "password": "Hlinh93*",
+        "name": "Linh TD Nguyên",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddb7e841697ddbdcf43beb"
+        },
+        "account": "0798940427",
+        "password": "Hlinh93*",
+        "name": "Linh Linh",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddbd8f41697ddbdcf43c22"
+        },
+        "account": "0798940961",
+        "password": "Hlinh93*",
+        "name": "TD Lin",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fd392346dc062408d1f6"
+        },
+        "account": "0941523285",
+        "password": "abc123*",
+        "name": "Hoàng Nguyễn",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028fe45ee5f18fcc5909d0"
+        },
+        "account": "0852091163",
+        "password": "Hlinh1993**",
+        "name": "Nguyên Khanh",
+        "status": "Offline"
+      }
+    ],
+    "__v": 5,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0798940427",
+        "num_phone_zalo": "0798940427",
+        "password": "Hlinh93*",
+        "name": "Linh TDNS",
+        "status": "Offline"
+      },
+      {
+        "account": "0798938637",
+        "num_phone_zalo": "0798938637",
+        "password": "Hlinh93*",
+        "name": "Hoàng Linh td",
+        "status": "Offline"
+      },
+      {
+        "account": "0798940961",
+        "num_phone_zalo": "0798940961",
+        "password": "Hlinh93*",
+        "name": "Httlinh Tuyendung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69ddb8ee41697ddbdcf43bee"
+    },
+    "time_logged_in": {
+      "$date": "2026-05-21T20:49:19.682Z"
+    },
+    "device_name": "A41",
+    "device_id": "R7AY903Z0WX",
+    "current_account": "0832058892",
+    "status": false,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1776138478388,
+    "updatedAt": 1776745930168,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddb93641697ddbdcf43bf1"
+        },
+        "account": "0832058892",
+        "password": "hungha365",
+        "name": "Minh Nga",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddb94341697ddbdcf43bf4"
+        },
+        "account": "0832076955",
+        "password": "hungha365",
+        "name": "Mai Nga",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddb94d41697ddbdcf43bf7"
+        },
+        "account": "0812572995",
+        "password": "hungha365",
+        "name": "Thanh Nga",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fdca2346dc062408d20f"
+        },
+        "account": "0941294983",
+        "password": "timviec365.vn",
+        "name": "Phương Phương",
+        "status": "Offline"
+      }
+    ],
+    "__v": 4,
+    "adb_connected": false,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "rabbit_connected": true,
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "accounts_zalo": [
+      {
+        "account": "0832058892",
+        "num_phone_zalo": "0832058892",
+        "password": "hungha365",
+        "name": "nh Nga",
+        "status": "Offline"
+      },
+      {
+        "account": "0832076955",
+        "num_phone_zalo": "0832076955",
+        "password": "hungha365",
+        "name": "Mai Nga Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0812572995",
+        "num_phone_zalo": "0812572995",
+        "password": "hungha365",
+        "name": "Thanh Nga Tuyendung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69ddba4141697ddbdcf43c00"
+    },
+    "time_logged_in": {
+      "$date": "2026-05-20T20:53:35.528Z"
+    },
+    "device_name": "A40",
+    "device_id": "R7AY903Z9VW",
+    "current_account": "0798692204",
+    "status": true,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1776138817084,
+    "updatedAt": 1776745865996,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddba7a41697ddbdcf43c07"
+        },
+        "account": "0817021639",
+        "password": "timviec365",
+        "name": "Ánh Nguyễn",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddba8b41697ddbdcf43c0e"
+        },
+        "account": "0814309649",
+        "password": "timviec365",
+        "name": "Thu Quyeen",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fd722346dc062408d1f9"
+        },
+        "account": "0798692204",
+        "password": "timviec365",
+        "name": "Phương Vũ",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fd892346dc062408d1fe"
+        },
+        "account": "0842040322",
+        "password": "An12345@",
+        "name": "Bảo An",
+        "status": "Offline"
+      }
+    ],
+    "__v": 4,
+    "adb_connected": true,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:33:57.040Z"
+    },
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "last_seen": {
+      "$date": "2026-05-22T08:33:57.040Z"
+    },
+    "rabbit_connected": true,
+    "updated_at": {
+      "$date": "2026-05-22T08:33:57.040Z"
+    },
+    "accounts_zalo": [
+      {
+        "account": "0814309649",
+        "num_phone_zalo": "0814309649",
+        "password": "timviec365",
+        "name": "Lê Quyeen",
+        "status": "Offline"
+      },
+      {
+        "account": "0817021639",
+        "num_phone_zalo": "0817021639",
+        "password": "timviec365",
+        "name": "Ánh Nguyễn",
+        "status": "Offline"
+      },
+      {
+        "account": "0812835623",
+        "num_phone_zalo": "0812835623",
+        "password": "timviec365",
+        "name": "Hồng Thu",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69ddc51da898d39c5480ad3a"
+    },
+    "time_logged_in": {
+      "$date": "2026-05-21T10:38:15.954Z"
+    },
+    "device_name": "A35",
+    "device_id": "R7AYA03N3TX",
+    "current_account": "0797497517",
+    "status": false,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1776141597368,
+    "updatedAt": 1776745544617,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddc599a898d39c5480ad40"
+        },
+        "account": "0797497517",
+        "password": "hhp1239889",
+        "name": "Nguyên Đán",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddc5b0a898d39c5480ad43"
+        },
+        "account": "0797502130",
+        "password": "hhp1239889",
+        "name": "Định Công",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddc5c2a898d39c5480ad46"
+        },
+        "account": "0797498610",
+        "password": "hhp1239889",
+        "name": "Trần Bình",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fc482346dc062408d1d8"
+        },
+        "account": "0798491605",
+        "password": "Chien123@",
+        "name": "Hoàng Chiến",
+        "status": "Offline"
+      }
+    ],
+    "__v": 5,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0797498610",
+        "num_phone_zalo": "0797498610",
+        "password": "hhp1239889",
+        "name": "Định Công",
+        "status": "Offline"
+      },
+      {
+        "account": "0797502130",
+        "num_phone_zalo": "0797502130",
+        "password": "hhp1239889",
+        "name": "Nguyên Đán",
+        "status": "Offline"
+      },
+      {
+        "account": "0797497517",
+        "num_phone_zalo": "0797497517",
+        "password": "hhp1239889",
+        "name": "Trần Điền",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69ddc616a898d39c5480ad49"
+    },
+    "time_logged_in": {
+      "$date": "2026-05-21T16:49:22.237Z"
+    },
+    "device_name": "A36",
+    "device_id": "R7AY20MVWGH",
+    "current_account": "0362292440",
+    "status": true,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1776141846672,
+    "updatedAt": 1776142046346,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddc65ea898d39c5480ad4c"
+        },
+        "account": "tranthuytimviec365.06@gmail.com",
+        "password": "thu1810",
+        "name": "Thu Hoài",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddc688a898d39c5480ad4f"
+        },
+        "account": "0362292440",
+        "password": "timviec365@",
+        "name": "Hoang Dieu Anh",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddc6a5a898d39c5480ad52"
+        },
+        "account": "0812506166",
+        "password": "timviec365@",
+        "name": "Bảo My",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddc6c1a898d39c5480ad55"
+        },
+        "account": "0886083302",
+        "password": "Maihiep2008@",
+        "name": "Hiệp Mai",
+        "status": "Offline"
+      }
+    ],
+    "__v": 5,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:34:03.350Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:34:03.350Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:34:03.350Z"
+    },
+    "adb_connected": true,
+    "heartbeat_note": "device_supervisor_heartbeat",
+    "rabbit_connected": false,
+    "accounts_zalo": [
+      {
+        "account": "0812506166",
+        "num_phone_zalo": "0812506166",
+        "password": "timviec365@",
+        "name": "Bảo My",
+        "status": "Offline"
+      },
+      {
+        "account": "0941162845",
+        "num_phone_zalo": "0941162845",
+        "password": "timviec365@",
+        "name": "Bảo Vy",
+        "status": "Offline"
+      },
+      {
+        "account": "0971335869",
+        "num_phone_zalo": "0971335869",
+        "password": "Hhp123988@",
+        "name": "Bảo Ngọc tk",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69ddc720a898d39c5480ad5b"
+    },
+    "time_logged_in": {
+      "$date": "2026-05-21T10:47:39.976Z"
+    },
+    "device_name": "A37",
+    "device_id": "R7AYB07WK4A",
+    "current_account": "anhmaikd0110@gmail.com",
+    "status": false,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1776142112414,
+    "updatedAt": 1779087494093,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddc87fa898d39c5480ad64"
+        },
+        "account": "0798715302",
+        "password": "timviec365@",
+        "name": "Anh Lan",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddc897a898d39c5480ad67"
+        },
+        "account": "0798719041",
+        "password": "huong1210",
+        "name": "Hương Mai",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddc8ada898d39c5480ad6a"
+        },
+        "account": "anhmaikd0110@gmail.com",
+        "password": "maianh0709",
+        "name": "Lương Trang",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fca32346dc062408d1e5"
+        },
+        "account": "0812232296",
+        "password": "timviec365@",
+        "name": "Linh Phạm",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a0ab886bd509248ac2bbcad"
+        },
+        "account": "haidvan99@gmail.com",
+        "password": "Hhp123988@",
+        "name": "Trâm Quỳnh",
+        "status": "Offline"
+      }
+    ],
+    "__v": 5,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0798715302",
+        "num_phone_zalo": "0798715302",
+        "password": "timviec365@",
+        "name": "Lan Anh Timviec",
+        "status": "Offline"
+      },
+      {
+        "account": "0798719041",
+        "num_phone_zalo": "0798719041",
+        "password": "timviec365@",
+        "name": "Mỹ Anh",
+        "status": "Offline"
+      },
+      {
+        "account": "0798715417",
+        "num_phone_zalo": "0798715417",
+        "password": "timviec365#",
+        "name": "Phương Hà",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69dde1e4a898d39c5480afc2"
+    },
+    "time_logged_in": null,
+    "device_name": "A32",
+    "device_id": "R7AYB08VH6B",
+    "current_account": "",
+    "status": false,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1776148964894,
+    "updatedAt": 1778552661690,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69dde34aa898d39c5480afe6"
+        },
+        "account": "0798271754",
+        "password": "Hienhientimviec365@",
+        "name": "Hiền Nguyễn",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69ddf1fea898d39c5480b099"
+        },
+        "account": "0798384902",
+        "password": "Hanhantimviec365@",
+        "name": "Nguyễn Hân",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fb2a2346dc062408d1bb"
+        },
+        "account": "0798380631",
+        "password": "timviec365@",
+        "name": "Ánh Phương",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fb4a2346dc062408d1be"
+        },
+        "account": "0941584981",
+        "password": "timviec365@",
+        "name": "An Nguyễn",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a028f555ee5f18fcc58f901"
+        },
+        "account": "0812152544",
+        "password": "Ninhtimviec365@",
+        "name": "Ninh Nguyễn",
+        "status": "Offline"
+      }
+    ],
+    "__v": 6,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0798488741",
+        "num_phone_zalo": "0798488741",
+        "password": "Timviec365@",
+        "name": "Nguyễn Thảo Ly",
+        "status": "Offline"
+      },
+      {
+        "account": "0798384902",
+        "num_phone_zalo": "0798384902",
+        "password": "Timviec365@",
+        "name": "Bạch Thảo",
+        "status": "Offline"
+      },
+      {
+        "account": "0798271754",
+        "num_phone_zalo": "0798271754",
+        "password": "Timviec365@",
+        "name": "Nguyễn Thảo Anh",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69e1bb572346dc0624089e6e"
+    },
+    "time_logged_in": {
+      "$date": "2026-05-21T20:45:03.582Z"
+    },
+    "device_name": "A43",
+    "device_id": "R7AY903ZH1V",
+    "current_account": "0812517382",
+    "status": false,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1776401239017,
+    "updatedAt": 1776746230832,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6feba2346dc062408d231"
+        },
+        "account": "0812395343",
+        "password": "abc123456#",
+        "name": "Ngân Lê",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fed62346dc062408d238"
+        },
+        "account": "0812291394",
+        "password": "abc123456#",
+        "name": "Ngọc Thu",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fee42346dc062408d23b"
+        },
+        "account": "0812517382",
+        "password": "abc123456#",
+        "name": "An Thu",
+        "status": "Online"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69e6fef62346dc062408d23e"
+        },
+        "account": "0943480993",
+        "password": "abc123456#",
+        "name": "Tuệ An",
+        "status": "Offline"
+      }
+    ],
+    "__v": 4,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0812395343",
+        "num_phone_zalo": "0812395343",
+        "password": "abc123456789#",
+        "name": "Bảo Ngọc",
+        "status": "Offline"
+      },
+      {
+        "account": "0812291394",
+        "num_phone_zalo": "0812291394",
+        "password": "abc123456789#",
+        "name": "Thanh Lam",
+        "status": "Offline"
+      },
+      {
+        "account": "0812517382",
+        "num_phone_zalo": "0812517382",
+        "password": "abc123456789#",
+        "name": "Trâm Anh",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "69f9a137f2160f1bb5849f2f"
+    },
+    "time_logged_in": null,
+    "device_name": "A44",
+    "device_id": "R7AY6009XMZ",
+    "current_account": "",
+    "status": false,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1777967415655,
+    "updatedAt": 1778552860836,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69f9a17df2160f1bb584a676"
+        },
+        "account": "0941663293",
+        "password": "Phuongthao.365",
+        "name": "Phương Thảo",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69f9a194f2160f1bb584a859"
+        },
+        "account": "0942805993",
+        "password": "timviec365@",
+        "name": "Oanh Kim",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69f9a1b9f2160f1bb584ac15"
+        },
+        "account": "0822015218",
+        "password": "hhp1239889",
+        "name": "Chut Chit",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "69f9a1ccf2160f1bb584adcc"
+        },
+        "account": "0798481925",
+        "password": "Timviec365",
+        "name": "Phạm Nga",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a02901c5ee5f18fcc591015"
+        },
+        "account": "0797628416",
+        "password": "huong1210",
+        "name": "Mai Phương",
+        "status": "Offline"
+      }
+    ],
+    "__v": 5,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "adb_connected": false,
+    "heartbeat_note": "removed_after_adb_scan_retries",
+    "rabbit_connected": true,
+    "accounts_zalo": [
+      {
+        "account": "0852124925",
+        "num_phone_zalo": "0852124925",
+        "password": "Huong1210",
+        "name": "Tuệ An",
+        "status": "Offline"
+      },
+      {
+        "account": "0852584826",
+        "num_phone_zalo": "0852584826",
+        "password": "Huong1210",
+        "name": "Xuân Thuỷ",
+        "status": "Offline"
+      },
+      {
+        "account": "0852091163",
+        "num_phone_zalo": "0852091163",
+        "password": "Huong1210",
+        "name": "nh Anh",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6a0eb9cbba35ebff0c2af454"
+    },
+    "time_logged_in": null,
+    "device_name": "A45",
+    "device_id": "R83L316DH8X",
+    "current_account": "",
+    "status": false,
+    "user": {
+      "name": "Lưu Thư",
+      "crm_id": "22833463"
+    },
+    "createdAt": 1779349963303,
+    "updatedAt": 1779350040294,
+    "accounts": [
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a0eb9feba35ebff0c2af45b"
+        },
+        "account": "0789413861",
+        "password": "linh1234#",
+        "name": "Gia Linh",
+        "status": "Offline"
+      },
+      {
+        "emp_id": null,
+        "_id": {
+          "$oid": "6a0eba18ba35ebff0c2af460"
+        },
+        "account": "vanngocnga98@gmail.com",
+        "password": "Hhp123988@",
+        "name": "Lê Ánh",
+        "status": "Offline"
+      }
+    ],
+    "__v": 2,
+    "heartbeat_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "last_seen": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "updated_at": {
+      "$date": "2026-05-22T08:09:14.062Z"
+    },
+    "accounts_zalo": [
+      {
+        "account": "0789413861",
+        "num_phone_zalo": "0789413861",
+        "password": "han1234#",
+        "name": "Lê Gia Hân",
+        "status": "Offline"
+      },
+      {
+        "account": "0765274875",
+        "num_phone_zalo": "0765274875",
+        "password": "bang1234@",
+        "name": "Tuyết Băng",
+        "status": "Offline"
+      },
+      {
+        "account": "0798492431",
+        "num_phone_zalo": "0798492431",
+        "password": "chi12345@",
+        "name": "Nguyễn Kim Chi",
+        "status": "Offline"
+      }
+    ]
+  }
+]

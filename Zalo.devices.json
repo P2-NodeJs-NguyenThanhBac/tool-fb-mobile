@@ -1,0 +1,1262 @@
+[
+  {
+    "device_name": "A01",
+    "device_id": "R8YY70F5MKN",
+    "owner": "",
+    "accounts_zalo": [
+      {
+        "account": "0962104081",
+        "num_phone_zalo": "0962104081",
+        "password": "timviec365",
+        "name": "Hoàng Long",
+        "status": "Offline"
+      },
+      {
+        "account": "0966025713",
+        "num_phone_zalo": "0966025713",
+        "password": "timviec365",
+        "name": "Mạnh Duy",
+        "status": "Offline"
+      },
+      {
+        "account": "0798492537",
+        "num_phone_zalo": "0798492537",
+        "password": "timviec365@",
+        "name": "Lê Anh Vũ",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A02",
+    "device_id": "7DXCUKKB6DVWDAQO",
+    "owner": "Quân",
+    "accounts_zalo": [
+      {
+        "account": "0385765903",
+        "num_phone_zalo": "0385765903",
+        "password": "timviec365@123",
+        "name": "Timviec Ba Sáu Năm",
+        "status": "Offline"
+      },
+      {
+        "account": "0969106521",
+        "num_phone_zalo": "0969106521",
+        "password": "timviec365",
+        "name": "Thanh Tú",
+        "status": "Offline"
+      },
+      {
+        "account": "0963904347",
+        "num_phone_zalo": "0963904347",
+        "password": "hhp123456",
+        "name": "Phương Anh",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A03",
+    "device_id": "TSPNH6GYZLPJBY6X",
+    "owner": "",
+    "accounts_zalo": [
+      {
+        "account": "0941295235",
+        "num_phone_zalo": "0941295235",
+        "password": "Hhp123988@",
+        "name": "Ánh Dương",
+        "status": "Offline"
+      },
+      {
+        "account": "0978025150",
+        "num_phone_zalo": "0978025150",
+        "password": "timviec365",
+        "name": "Quang Huy",
+        "status": "Offline"
+      },
+      {
+        "account": "0941219816",
+        "num_phone_zalo": "0941219816",
+        "password": "Hhp123988",
+        "name": "nh Thư",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A04",
+    "device_id": "7HYP4T4XTS4DXKCY",
+    "owner": "Lâm",
+    "accounts_zalo": [
+      {
+        "account": "0964876703",
+        "num_phone_zalo": "0964876703",
+        "password": "Thanhtu1",
+        "name": "Đỗ Xuân Tú",
+        "status": "Offline"
+      },
+      {
+        "account": "0968082574",
+        "num_phone_zalo": "0968082574",
+        "password": "hhp123456",
+        "name": "Hoàng Cả",
+        "status": "Offline"
+      },
+      {
+        "account": "0978722184",
+        "num_phone_zalo": "0978722184",
+        "password": "Hhp123@",
+        "name": "Quang Trung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A05",
+    "device_id": "UWJJOJLB85SO7LIZ",
+    "owner": "",
+    "accounts_zalo": [
+      {
+        "account": "0852039719",
+        "num_phone_zalo": "0852039719",
+        "password": "timviec365@123",
+        "name": "Lê Thị Liên",
+        "status": "Offline"
+      },
+      {
+        "account": "0963563276",
+        "num_phone_zalo": "0963563276",
+        "password": "timviec365",
+        "name": "Nguyễn Hiếu",
+        "status": "Offline"
+      },
+      {
+        "account": "0798491605",
+        "num_phone_zalo": "0798491605",
+        "password": "timviec365@",
+        "name": "Hưng Phạm",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A06",
+    "device_id": "CEIN4X45I7ZHFEFU",
+    "owner": "Bình",
+    "accounts_zalo": [
+      {
+        "account": "0973418952",
+        "num_phone_zalo": "0973418952",
+        "password": "Hhp123456@",
+        "name": "Châu Nguyễn",
+        "status": "Offline"
+      },
+      {
+        "account": "0971412658",
+        "num_phone_zalo": "0971412658",
+        "password": "hhp123456",
+        "name": "Ngô Dung",
+        "status": "Offline"
+      },
+      {
+        "account": "0961991742",
+        "num_phone_zalo": "0961991742",
+        "password": "timviec365",
+        "name": "Minh Hiếu",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A07",
+    "device_id": "8HMN4T9575HAQWLN",
+    "owner": "Hải Yến",
+    "accounts_zalo": [
+      {
+        "account": "0978585641",
+        "num_phone_zalo": "0978585641",
+        "password": "hhp123456",
+        "name": "Hải Yến Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0982305784",
+        "num_phone_zalo": "0982305784",
+        "password": "hhp123456",
+        "name": "Hải Yến Timviec",
+        "status": "Offline"
+      },
+      {
+        "account": "0973106450",
+        "num_phone_zalo": "0973106450",
+        "password": "hhp123456",
+        "name": "Hải Yến",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A08",
+    "device_id": "CQIZKJ8P59AY7DHI",
+    "owner": "Ngô Ngọc Hà",
+    "accounts_zalo": [
+      {
+        "account": "0971207216",
+        "num_phone_zalo": "0971207216",
+        "password": "timviec365@",
+        "name": "Ngọc Hà Tìm Việc",
+        "status": "Offline"
+      },
+      {
+        "account": "0832086515",
+        "num_phone_zalo": "0832086515",
+        "password": "timviec365",
+        "name": "Mới: Anh Thư",
+        "status": "Offline"
+      },
+      {
+        "account": "0969824937",
+        "num_phone_zalo": "0969824937",
+        "password": "timviec365",
+        "name": "Ngọc Hà",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A09",
+    "device_id": "9PAM7DIFW87DOBEU",
+    "owner": "Ngô Thị Dung",
+    "accounts_zalo": [
+      {
+        "account": "0988003410",
+        "num_phone_zalo": "0988003410",
+        "password": "ngodung168",
+        "name": "Ngô Dung Hr",
+        "status": "Offline"
+      },
+      {
+        "account": "0798582093",
+        "num_phone_zalo": "0798582093",
+        "password": "ngodung168",
+        "name": "Ngô Dung Tuyendung Ba Sáu Năm",
+        "status": "Offline"
+      },
+      {
+        "account": "0395459520",
+        "num_phone_zalo": "0395459520",
+        "password": "ngodung168",
+        "name": "Ngô Dung Tuyendung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A10",
+    "device_id": "EQLNQ8O7EQCQPFXG",
+    "owner": "Tâm",
+    "accounts_zalo": [
+      {
+        "account": "0978847104",
+        "num_phone_zalo": "0978847104",
+        "password": "timviec365@",
+        "name": "Phương Linh",
+        "status": "Offline"
+      },
+      {
+        "account": "0975947930",
+        "num_phone_zalo": "0975947930",
+        "password": "Timviec365@",
+        "name": "Nhi Nhi",
+        "status": "Offline"
+      },
+      {
+        "account": "0964390961",
+        "num_phone_zalo": "0964390961",
+        "password": "Timviec365@",
+        "name": "Minh Phương",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A11",
+    "device_id": "YH9TSS7XCMPFZHNR",
+    "owner": "Mai Hương",
+    "accounts_zalo": [
+      {
+        "account": "0972223710",
+        "num_phone_zalo": "0972223710",
+        "password": "timviec365",
+        "name": "Mai Hương Timviec",
+        "status": "Offline"
+      },
+      {
+        "account": "0355242254",
+        "num_phone_zalo": "0355242254",
+        "password": "timviec365.vn",
+        "name": "Mai Hương Hr",
+        "status": "Offline"
+      },
+      {
+        "account": "0975365214",
+        "num_phone_zalo": "0975365214",
+        "password": "Hhp1234@#",
+        "name": "Hương Mai Timviec",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A12",
+    "device_id": "MJZDFY896TMJBUPN",
+    "owner": "ÁNH",
+    "accounts_zalo": [
+      {
+        "account": "0344331495",
+        "num_phone_zalo": "0344331495",
+        "password": "Hhp123456",
+        "name": "Lê Liên",
+        "status": "Offline"
+      },
+      {
+        "account": "0975629854",
+        "num_phone_zalo": "0975629854",
+        "password": "anh123#",
+        "name": "Minh Minh",
+        "status": "Offline"
+      },
+      {
+        "account": "0966049501",
+        "num_phone_zalo": "0966049501",
+        "password": "anh123#",
+        "name": "Ngọc Nguyễn",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A13",
+    "device_id": "EY5H9DJNIVNFH6OR",
+    "owner": "Huy",
+    "accounts_zalo": [
+      {
+        "account": "0968581455",
+        "num_phone_zalo": "0968581455",
+        "password": "Hhp12389",
+        "name": "Huyền Trang Timviecvn",
+        "status": "Offline"
+      },
+      {
+        "account": "0964102485",
+        "num_phone_zalo": "0964102485",
+        "password": "Hhp8998123",
+        "name": "Huyền Trang Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0987610815",
+        "num_phone_zalo": "0987610815",
+        "password": "Hhp998123",
+        "name": "Chie Nguyeenx",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A14",
+    "device_id": "F6NZ5LRKWWGACYQ8",
+    "owner": "Lại Thị Nhàn",
+    "accounts_zalo": [
+      {
+        "account": "0913591672",
+        "num_phone_zalo": "0913591672",
+        "password": "hungha365",
+        "name": "Thanh Nhàn Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0359615945",
+        "num_phone_zalo": "0359615945",
+        "password": "timviec365",
+        "name": "Thanh Nhàn Hr",
+        "status": "Offline"
+      },
+      {
+        "account": "0972381905",
+        "num_phone_zalo": "0972381905",
+        "password": "Hhp123456",
+        "name": "Thanh Nhàn Timviec",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A15",
+    "device_id": "QK8TEMKZMBYHPV6P",
+    "owner": "Lưu Thị Thư",
+    "accounts_zalo": [
+      {
+        "account": "0984485936",
+        "num_phone_zalo": "0984485936",
+        "password": "Hungha@365",
+        "name": "Lưu Thư Timviec",
+        "status": "Offline"
+      },
+      {
+        "account": "0942180356",
+        "num_phone_zalo": "0942180356",
+        "password": "Hungha@365",
+        "name": "Thư Tìm Việc Ba Sáu Năm",
+        "status": "Offline"
+      },
+      {
+        "account": "0941181652",
+        "num_phone_zalo": "0941181652",
+        "password": "Thuwagh@365",
+        "name": "Anh Thư",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A16",
+    "device_id": "IJP78949G69DKNHM",
+    "owner": "Lê Thị Thuỳ",
+    "accounts_zalo": [
+      {
+        "account": "0987608429",
+        "num_phone_zalo": "0987608429",
+        "password": "hungha365",
+        "name": "Lê Thuỳ Timviec",
+        "status": "Offline"
+      },
+      {
+        "account": "0941523285",
+        "num_phone_zalo": "0941523285",
+        "password": "timviec365.vn",
+        "name": "Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0942165628",
+        "num_phone_zalo": "0942165628",
+        "password": "ngodung168",
+        "name": "Lê Thùy Tuyendung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A17",
+    "device_id": "EM4DYTEITCCYJNFU",
+    "owner": "Hoàng Thị Thùy Linh",
+    "accounts_zalo": [
+      {
+        "account": "0966117160",
+        "num_phone_zalo": "0966117160",
+        "password": "Hlinh1993*",
+        "name": "Tuyendung Ns",
+        "status": "Offline"
+      },
+      {
+        "account": "0961963671",
+        "num_phone_zalo": "0961963671",
+        "password": "Hlinh1993*",
+        "name": "Hoàng Linh Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0966578630",
+        "num_phone_zalo": "0966578630",
+        "password": "Hlinh1993*",
+        "name": "Thuỳ Linh Td",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A18",
+    "device_id": "PN59BMHYPFXCPN8T",
+    "owner": "Hoàng Thị Ngọc Mai",
+    "accounts_zalo": [
+      {
+        "account": "0798376684",
+        "num_phone_zalo": "0798376684",
+        "password": "timviec365",
+        "name": "Ngọc Mai tìm việc ba sáu năm",
+        "status": "Offline"
+      },
+      {
+        "account": "0383757614",
+        "num_phone_zalo": "0383757614",
+        "password": "timviec365@",
+        "name": "Ngọc Mai Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0982470403",
+        "num_phone_zalo": "0982470403",
+        "password": "timviec356",
+        "name": "Hoàng Mai Timviec",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A19",
+    "device_id": "Z5LVOF4PRGXGTS9H",
+    "owner": "Ngô Dung",
+    "accounts_zalo": [
+      {
+        "account": "0988658315",
+        "num_phone_zalo": "0988658315",
+        "password": "Hhp1234@",
+        "name": "Ngọc Vi Timviec Ba Sáu Năm",
+        "status": "Offline"
+      },
+      {
+        "account": "0338734680",
+        "num_phone_zalo": "0338734680",
+        "password": "Hhp1234@",
+        "name": "Ngô Dung Tìm Việc",
+        "status": "Offline"
+      },
+      {
+        "account": "0967791241",
+        "num_phone_zalo": "0967791241",
+        "password": "Hhp1234@",
+        "name": "Phương Linh",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A20",
+    "device_id": "EIFYAALRK7U4MRZ9",
+    "owner": "Nguyễn Thị Ngọc Ánh",
+    "accounts_zalo": [
+      {
+        "account": "0979700834",
+        "num_phone_zalo": "0979700834",
+        "password": "Ngocminh02",
+        "name": "Minh Ánh",
+        "status": "Offline"
+      },
+      {
+        "account": "0964403502",
+        "num_phone_zalo": "0964403502",
+        "password": "Timviec365@",
+        "name": "Trà My",
+        "status": "Offline"
+      },
+      {
+        "account": "0978152541",
+        "num_phone_zalo": "0978152541",
+        "password": "Timviec365@",
+        "name": "Hải Yến",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A21",
+    "device_id": "R8YY70F81TV",
+    "owner": "Thu Trà",
+    "accounts_zalo": [
+      {
+        "account": "0978086571",
+        "num_phone_zalo": "0978086571",
+        "password": "Timviec365@",
+        "name": "Kim Thanh",
+        "status": "Offline"
+      },
+      {
+        "account": "0812232296",
+        "num_phone_zalo": "0812232296",
+        "password": "Timviec365@",
+        "name": "Tuệ An",
+        "status": "Offline"
+      },
+      {
+        "account": "0979068173",
+        "num_phone_zalo": "0979068173",
+        "password": "Timviec365@",
+        "name": "Phạm Thảo",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A22",
+    "device_id": "69QGMN8PXWDYPNIF",
+    "owner": "Lê Yến",
+    "accounts_zalo": [
+      {
+        "account": "0987151142",
+        "num_phone_zalo": "0987151142",
+        "password": "abc123456789#",
+        "name": "Lê Hải Yến",
+        "status": "Offline"
+      },
+      {
+        "account": "0984676250",
+        "num_phone_zalo": "0984676250",
+        "password": "abc123456789#",
+        "name": "Lê Yến Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0987680154",
+        "num_phone_zalo": "0987680154",
+        "password": "abc123456789#",
+        "name": "Hải Yến Lê",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A23",
+    "device_id": "IZDEGA8TFYXWRK9X",
+    "owner": "Duy",
+    "accounts_zalo": [
+      {
+        "account": "0946410089",
+        "num_phone_zalo": "0946410089",
+        "password": "Hhp123568@",
+        "name": "Minh Hưng",
+        "status": "Offline"
+      },
+      {
+        "account": "0946430089",
+        "num_phone_zalo": "0946430089",
+        "password": "HH123589#",
+        "name": "Thiên Bình",
+        "status": "Offline"
+      },
+      {
+        "account": "0792195628",
+        "num_phone_zalo": "0792195628",
+        "password": "HP123456!",
+        "name": "Bạch Dương",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A24",
+    "device_id": "R8YY70HCNRX",
+    "owner": "Tâm",
+    "accounts_zalo": [
+      {
+        "account": "0832111220",
+        "num_phone_zalo": "0832111220",
+        "password": "Timviec123",
+        "name": "Diễm Quỳnh Tìm Việc",
+        "status": "Offline"
+      },
+      {
+        "account": "0792226894",
+        "num_phone_zalo": "0792226894",
+        "password": "Anh123",
+        "name": "Đỗ Quỳnh Anh",
+        "status": "Offline"
+      },
+      {
+        "account": "0942436914",
+        "num_phone_zalo": "0942436914",
+        "password": "Phuong123",
+        "name": "Mai Phương Tuyendung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A25",
+    "device_id": "R83Y50JZK6A",
+    "owner": "Trà",
+    "accounts_zalo": [
+      {
+        "account": "0792216895",
+        "num_phone_zalo": "0792216895",
+        "password": "Hang123@",
+        "name": "Hằng Tìm Việc",
+        "status": "Offline"
+      },
+      {
+        "account": "0941185980",
+        "num_phone_zalo": "0941185980",
+        "password": "H123456#",
+        "name": "Thanh Huyền",
+        "status": "Offline"
+      },
+      {
+        "account": "0941294983",
+        "num_phone_zalo": "0941294983",
+        "password": "Tung123#",
+        "name": "Hoàng Tùng",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A26",
+    "device_id": "R8YY70F5VSE",
+    "owner": "Nhàn",
+    "accounts_zalo": [
+      {
+        "account": "0852027089",
+        "num_phone_zalo": "0852027089",
+        "password": "HP123456@",
+        "name": "Thanh Nhàn Hr",
+        "status": "Offline"
+      },
+      {
+        "account": "0832007044",
+        "num_phone_zalo": "0832007044",
+        "password": "HP123456@",
+        "name": "Thanh Nhàn Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0792340256",
+        "num_phone_zalo": "0792340256",
+        "password": "HP123456@",
+        "name": "Thanh Nhàn Timviec",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A27",
+    "device_id": "R7AY904590L",
+    "owner": "Tâm",
+    "accounts_zalo": [
+      {
+        "account": "0792304256",
+        "num_phone_zalo": "0792304256",
+        "password": "Hhp123988@",
+        "name": "Ngan Timviec",
+        "status": "Offline"
+      },
+      {
+        "account": "0987244950",
+        "num_phone_zalo": "0987244950",
+        "password": "Timviec6@",
+        "name": "Phạm Hiếu",
+        "status": "Offline"
+      },
+      {
+        "account": "0792305156",
+        "num_phone_zalo": "0792305156",
+        "password": "Hhp123988@",
+        "name": "Timviec Ngan",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A28",
+    "device_id": "R7AYA03PVXF",
+    "owner": "Liên",
+    "accounts_zalo": [
+      {
+        "account": "0798273705",
+        "num_phone_zalo": "0798273705",
+        "password": "mai123988@",
+        "name": "Lê Liên",
+        "status": "Offline"
+      },
+      {
+        "account": "0798271691",
+        "num_phone_zalo": "0798271691",
+        "password": "hoai123456@",
+        "name": "Kim Hoài",
+        "status": "Offline"
+      },
+      {
+        "account": "0797886934",
+        "num_phone_zalo": "0797886934",
+        "password": "chau123@",
+        "name": "Minh Châu",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A29",
+    "device_id": "R7AY90450PB",
+    "owner": "Thư",
+    "accounts_zalo": [
+      {
+        "account": "0985771347",
+        "num_phone_zalo": "0985771347",
+        "password": "Hungha@365",
+        "name": "Thư Tìm Việc Ba Sáu Năm",
+        "status": "Offline"
+      },
+      {
+        "account": "0941801258",
+        "num_phone_zalo": "0941801258",
+        "password": "Thuwhungha@365",
+        "name": "Kim Thư",
+        "status": "Offline"
+      },
+      {
+        "account": "0798474372",
+        "num_phone_zalo": "0798474372",
+        "password": "Thuwhungha@365",
+        "name": "An Thư",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A30",
+    "device_id": "R7AYA024LHM",
+    "owner": "Thùy",
+    "accounts_zalo": [
+      {
+        "account": "0942018655",
+        "num_phone_zalo": "0942018655",
+        "password": "timviec365.vn",
+        "name": "Lee Thuỳ",
+        "status": "Offline"
+      },
+      {
+        "account": "0798523107",
+        "num_phone_zalo": "0798523107",
+        "password": "timviec365.vn",
+        "name": "Lee Lee",
+        "status": "Offline"
+      },
+      {
+        "account": "0797014220",
+        "num_phone_zalo": "0797014220",
+        "password": "timviec365.vn",
+        "name": "Thuỳ Anh",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A31",
+    "device_id": "R7AY5100QSK",
+    "owner": "Hải Yến",
+    "accounts_zalo": [
+      {
+        "account": "0941738293",
+        "num_phone_zalo": "0941738293",
+        "password": "hhp123456",
+        "name": "Khánh Vy Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0797243096",
+        "num_phone_zalo": "0797243096",
+        "password": "hhp123456",
+        "name": "Khánh My",
+        "status": "Offline"
+      },
+      {
+        "account": "0798693845",
+        "num_phone_zalo": "0798693845",
+        "password": "hhp123456",
+        "name": "Phạm Phương Thảo",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A32",
+    "device_id": "R7AYB08VH6B",
+    "owner": "Trà",
+    "accounts_zalo": [
+      {
+        "account": "0798488741",
+        "num_phone_zalo": "0798488741",
+        "password": "Timviec365@",
+        "name": "Nguyễn Thảo Ly",
+        "status": "Offline"
+      },
+      {
+        "account": "0798384902",
+        "num_phone_zalo": "0798384902",
+        "password": "Timviec365@",
+        "name": "Bạch Thảo",
+        "status": "Offline"
+      },
+      {
+        "account": "0798271754",
+        "num_phone_zalo": "0798271754",
+        "password": "Timviec365@",
+        "name": "Nguyễn Thảo Anh",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A33",
+    "device_id": "R7AYA03NAAX",
+    "owner": "Ngọc Ánh CSKH",
+    "accounts_zalo": [
+      {
+        "account": "0797381692",
+        "num_phone_zalo": "0797381692",
+        "password": "timviec365@",
+        "name": "Minh Anh",
+        "status": "Offline"
+      },
+      {
+        "account": "0797381342",
+        "num_phone_zalo": "0797381342",
+        "password": "timviec365@",
+        "name": "Hoàng Anh",
+        "status": "Offline"
+      },
+      {
+        "account": "0797380931",
+        "num_phone_zalo": "0797380931",
+        "password": "timviec365@",
+        "name": "Bảo Khang",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A34",
+    "device_id": "R7AY9041APV",
+    "owner": "Bắc",
+    "accounts_zalo": [
+      {
+        "account": "0798141784",
+        "num_phone_zalo": "0798141784",
+        "password": "dat12345@",
+        "name": "Tiến Đạt",
+        "status": "Offline"
+      },
+      {
+        "account": "0797264530",
+        "num_phone_zalo": "0797264530",
+        "password": "Nguyenvan2304",
+        "name": "Unknow1",
+        "status": "Offline"
+      },
+      {
+        "account": "0798270837",
+        "num_phone_zalo": "0798270837",
+        "password": "Nguyenhoa2205",
+        "name": "Unknow2",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A35",
+    "device_id": "R7AYA03N3TX",
+    "owner": "Nguyễn Thị Linh Chi",
+    "accounts_zalo": [
+      {
+        "account": "0797498610",
+        "num_phone_zalo": "0797498610",
+        "password": "hhp1239889",
+        "name": "Định Công",
+        "status": "Offline"
+      },
+      {
+        "account": "0797502130",
+        "num_phone_zalo": "0797502130",
+        "password": "hhp1239889",
+        "name": "Nguyên Đán",
+        "status": "Offline"
+      },
+      {
+        "account": "0797497517",
+        "num_phone_zalo": "0797497517",
+        "password": "hhp1239889",
+        "name": "Trần Điền",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A36",
+    "device_id": "R7AY20MVWGH",
+    "owner": "Lê Dung",
+    "accounts_zalo": [
+      {
+        "account": "0812506166",
+        "num_phone_zalo": "0812506166",
+        "password": "timviec365@",
+        "name": "Bảo My",
+        "status": "Offline"
+      },
+      {
+        "account": "0941162845",
+        "num_phone_zalo": "0941162845",
+        "password": "timviec365@",
+        "name": "Bảo Vy",
+        "status": "Offline"
+      },
+      {
+        "account": "0971335869",
+        "num_phone_zalo": "0971335869",
+        "password": "Hhp123988@",
+        "name": "Bảo Ngọc tk",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A37",
+    "device_id": "R7AYB07WK4A",
+    "owner": "Thu Trang",
+    "accounts_zalo": [
+      {
+        "account": "0798715302",
+        "num_phone_zalo": "0798715302",
+        "password": "timviec365@",
+        "name": "Lan Anh Timviec",
+        "status": "Offline"
+      },
+      {
+        "account": "0798719041",
+        "num_phone_zalo": "0798719041",
+        "password": "timviec365@",
+        "name": "Mỹ Anh",
+        "status": "Offline"
+      },
+      {
+        "account": "0798715417",
+        "num_phone_zalo": "0798715417",
+        "password": "timviec365#",
+        "name": "Phương Hà",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A38",
+    "device_id": "R7AYA03L5TX",
+    "owner": "Ngô Dung",
+    "accounts_zalo": [
+      {
+        "account": "0797138671",
+        "num_phone_zalo": "0797138671",
+        "password": "Dung123456",
+        "name": "Ngô Dung tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0797142861",
+        "num_phone_zalo": "0797142861",
+        "password": "Dung123456",
+        "name": "Thùy Dung",
+        "status": "Offline"
+      },
+      {
+        "account": "0797142630",
+        "num_phone_zalo": "0797142630",
+        "password": "Dung123456",
+        "name": "Ngọc Quyên",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A39",
+    "device_id": "R7AY9040YYK",
+    "owner": "Hoàng Linh",
+    "accounts_zalo": [
+      {
+        "account": "0798940427",
+        "num_phone_zalo": "0798940427",
+        "password": "Hlinh93*",
+        "name": "Linh TDNS",
+        "status": "Offline"
+      },
+      {
+        "account": "0798938637",
+        "num_phone_zalo": "0798938637",
+        "password": "Hlinh93*",
+        "name": "Hoàng Linh td",
+        "status": "Offline"
+      },
+      {
+        "account": "0798940961",
+        "num_phone_zalo": "0798940961",
+        "password": "Hlinh93*",
+        "name": "Httlinh Tuyendung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A40",
+    "device_id": "R7AY903Z9VW",
+    "owner": "Ngọc Hà",
+    "accounts_zalo": [
+      {
+        "account": "0814309649",
+        "num_phone_zalo": "0814309649",
+        "password": "timviec365",
+        "name": "Lê Quyeen",
+        "status": "Offline"
+      },
+      {
+        "account": "0817021639",
+        "num_phone_zalo": "0817021639",
+        "password": "timviec365",
+        "name": "Ánh Nguyễn",
+        "status": "Offline"
+      },
+      {
+        "account": "0812835623",
+        "num_phone_zalo": "0812835623",
+        "password": "timviec365",
+        "name": "Hồng Thu",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A41",
+    "device_id": "R7AY903Z0WX",
+    "owner": "Lại Nhàn",
+    "accounts_zalo": [
+      {
+        "account": "0832058892",
+        "num_phone_zalo": "0832058892",
+        "password": "hungha365",
+        "name": "nh Nga",
+        "status": "Offline"
+      },
+      {
+        "account": "0832076955",
+        "num_phone_zalo": "0832076955",
+        "password": "hungha365",
+        "name": "Mai Nga Tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0812572995",
+        "num_phone_zalo": "0812572995",
+        "password": "hungha365",
+        "name": "Thanh Nga Tuyendung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A42",
+    "device_id": "R7AY60D7AWN",
+    "owner": "Ngọc Mai",
+    "accounts_zalo": [
+      {
+        "account": "0813620998",
+        "num_phone_zalo": "0813620998",
+        "password": "timviec365",
+        "name": "Mai Hoàng tuyendung",
+        "status": "Offline"
+      },
+      {
+        "account": "0832073744",
+        "num_phone_zalo": "0832073744",
+        "password": "timviec365",
+        "name": "Hoang Mai",
+        "status": "Offline"
+      },
+      {
+        "account": "0813109617",
+        "num_phone_zalo": "0813109617",
+        "password": "timviec365@",
+        "name": "Mai Tuyendung",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A43",
+    "device_id": "R7AY903ZH1V",
+    "owner": "Lê Yến",
+    "accounts_zalo": [
+      {
+        "account": "0812395343",
+        "num_phone_zalo": "0812395343",
+        "password": "abc123456789#",
+        "name": "Bảo Ngọc",
+        "status": "Offline"
+      },
+      {
+        "account": "0812291394",
+        "num_phone_zalo": "0812291394",
+        "password": "abc123456789#",
+        "name": "Thanh Lam",
+        "status": "Offline"
+      },
+      {
+        "account": "0812517382",
+        "num_phone_zalo": "0812517382",
+        "password": "abc123456789#",
+        "name": "Trâm Anh",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A44",
+    "device_id": "R7AY6009XMZ",
+    "owner": "Mai Hương",
+    "accounts_zalo": [
+      {
+        "account": "0852124925",
+        "num_phone_zalo": "0852124925",
+        "password": "Huong1210",
+        "name": "Tuệ An",
+        "status": "Offline"
+      },
+      {
+        "account": "0852584826",
+        "num_phone_zalo": "0852584826",
+        "password": "Huong1210",
+        "name": "Xuân Thuỷ",
+        "status": "Offline"
+      },
+      {
+        "account": "0852091163",
+        "num_phone_zalo": "0852091163",
+        "password": "Huong1210",
+        "name": "nh Anh",
+        "status": "Offline"
+      }
+    ]
+  },
+  {
+    "device_name": "A45",
+    "device_id": "R83L316DH8X",
+    "owner": "Liên",
+    "accounts_zalo": [
+      {
+        "account": "0789413861",
+        "num_phone_zalo": "0789413861",
+        "password": "han1234#",
+        "name": "Lê Gia Hân",
+        "status": "Offline"
+      },
+      {
+        "account": "0765274875",
+        "num_phone_zalo": "0765274875",
+        "password": "bang1234@",
+        "name": "Tuyết Băng",
+        "status": "Offline"
+      },
+      {
+        "account": "0798492431",
+        "num_phone_zalo": "0798492431",
+        "password": "chi12345@",
+        "name": "Nguyễn Kim Chi",
+        "status": "Offline"
+      }
+    ]
+  }
+]

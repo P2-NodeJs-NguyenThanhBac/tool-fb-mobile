@@ -1,0 +1,188 @@
+# Environment và Credentials
+DatabaseAccounts.env
+*.env
+.env*
+
+# Log files
+assets/logs/
+*.log
+test_*.log
+test_run_on_device_original.log
+tool-fb-mobile.zip 
+tool-fb-mobile_new.zip
+tool-fb-mobile_323.zip
+tool-fb-mobile_330.zip
+tool-fb-mobile_3_27.zip
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Sensitive data files
+back_up_full_account.json
+user_account.json
+*_account.json
+Zalo_data_login_path*.json
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+
+# Device data
+devices/*.json
+mapping.json
+
+# Screenshots và Files tạm
+Screen Shot/
+clipboard/
+urgent_queue/
+uploads/
+util/runtime_state
+
+# Temporary files
+clipboard.txt
+sent_log.txt
+*.tmp
+*.temp
+test.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+/module/__pycache__
+assets/logs/toolfacebook.log
+
+# venv
+tool_venv/
+.venv/
+zalo_venv/
+venv_Chuc_313
+venv3.10.11
+venv3.10
+venv_3.10.11
+venv/
+
+# base
+Zalo_CRM/
+base_banbe/
+check_add_friends/
+Zalo_base/
+zalo_run_log.json
+# ipynb file
+*.ipynb
+
+#*debug.xml
+profile_debug.xml
+composer_debug.xml
+composer_post_debug.xml
+urgent_queue.json
+log_note_thao_tac_tay/
+
+# Environment và Credentials
+DatabaseAccounts.env
+*.env
+.env*
+
+# Log files
+assets/logs/
+*.log
+test_*.log
+test_run_on_device_original.log
+tool-fb-mobile.zip 
+tool-fb-mobile_new.zip
+tool-fb-mobile_323.zip
+tool-fb-mobile_330.zip
+tool-fb-mobile_3_27.zip
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Sensitive data files
+back_up_full_account.json
+user_account.json
+*_account.json
+Zalo_data_login_path*.json
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+
+# Device data
+devices/*.json
+mapping.json
+
+# Screenshots và Files tạm
+Screen Shot/
+clipboard/
+urgent_queue/
+uploads/
+util/runtime_state
+
+# Temporary files
+clipboard.txt
+sent_log.txt
+*.tmp
+*.temp
+test.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+/module/__pycache__
+assets/logs/toolfacebook.log
+
+# venv
+tool_venv/
+.venv/
+zalo_venv/
+venv_Chuc_313
+venv3.10.11
+venv_3.10.11
+venv/
+
+# base
+Zalo_CRM/
+base_banbe/
+check_add_friends/
+Zalo_base/
+zalo_run_log.json
+# ipynb file
+*.ipynb
+
+#*debug.xml
+profile_debug.xml
+composer_debug.xml
+composer_post_debug.xml
+urgent_queue.json
+log_note_thao_tac_tay/
+
+composer_group_post_not_ready.xml
+composer_opener_not_found.xml
+composer_post_debug.xml
+
+*.rar
+* - Copy.*
+.git - Copy/
+composer_group_debug_after_click.xml
+
+crm_facebook.db
+db_tin_nhan.json
